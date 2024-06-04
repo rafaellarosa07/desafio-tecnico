@@ -26,5 +26,11 @@ public class TransacaoController {
 
         return ResponseEntity.ok(transacaoService.estatisticas());
     }
+
+    @DeleteMapping
+    public ResponseEntity<Void> deletar() {
+        transacaoService.deletar();
+        return ResponseEntity.status(200).build();
+    }
 }
 
