@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: Api-Transacao
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
