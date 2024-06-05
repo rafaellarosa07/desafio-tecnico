@@ -2,12 +2,14 @@ package com.github.daniellimadev.apitransacao.service;
 
 import com.github.daniellimadev.apitransacao.dto.EstatisticasDTO;
 import com.github.daniellimadev.apitransacao.dto.TransacaoDTO;
+import com.github.daniellimadev.apitransacao.exceptions.ValidacaoException;
 import com.github.daniellimadev.apitransacao.model.Transacao;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import java.time.Duration;
 import java.time.OffsetDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -18,6 +20,8 @@ public class TransacaoService {
     private static List<Transacao> transacoes =  new ArrayList<>();
 
     public Transacao salvar(TransacaoDTO transacaoDTO) {
+
+        validaRequest(transacaoDTO);
 
         Transacao transacao = new Transacao(Double.parseDouble(transacaoDTO.getValor()), OffsetDateTime.parse(transacaoDTO.getDataHora()));
         transacoes.add(transacao);
@@ -75,5 +79,23 @@ public class TransacaoService {
         }
 
         log.info("Transação deletadas com sucesso!");
+    }
+
+    public void validaRequest(TransacaoDTO transacaoDTO) {
+
+        OffsetDateTime offsetDateTime = OffsetDateTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ISO_DATE_TIME;
+        var dataAgora = formatter.format(offsetDateTime);
+        var dataTransacao = formatter.format(offsetDateTime.parse(transacaoDTO.getDataHora()));
+
+        var data = dataTransacao.compareTo(dataAgora);
+
+        if(data > 0) {
+            throw new ValidacaoException();
+        }
+
+        if(Double.parseDouble(transacaoDTO.getValor()) < 0) {
+            throw new ValidacaoException();
+        }
     }
 }
