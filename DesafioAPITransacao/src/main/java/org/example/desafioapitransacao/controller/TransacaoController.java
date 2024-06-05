@@ -32,4 +32,8 @@ public class TransacaoController {
     public List<Transacao> getTransacao(){
         return transacaoService.getTransacao();
     }
+    @DeleteMapping("/delete")
+    public void removerTransacao(){
+        transacaoService.deletarTransacao();
+    }
 }
