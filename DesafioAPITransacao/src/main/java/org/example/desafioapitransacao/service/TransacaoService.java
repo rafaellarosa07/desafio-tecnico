@@ -1,6 +1,8 @@
 package org.example.desafioapitransacao.service;
 
+import org.example.desafioapitransacao.DTO.Estatistica;
 import org.example.desafioapitransacao.DTO.Transacao;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.OffsetDateTime;
@@ -22,6 +24,9 @@ public class TransacaoService {
     }
     public List<Transacao> getTransacao() {
         return Transacao.getTransacoes();
+    }
+    public Estatistica getEstatistica(){
+        return Transacao.getEstatistica();
     }
     public void deletarTransacao() {
         Transacao.deleteTransacao();

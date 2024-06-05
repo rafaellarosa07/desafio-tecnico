@@ -1,6 +1,7 @@
 package org.example.desafioapitransacao.controller;
 
 import jakarta.validation.Valid;
+import org.example.desafioapitransacao.DTO.Estatistica;
 import org.example.desafioapitransacao.DTO.Transacao;
 import org.example.desafioapitransacao.service.TransacaoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,8 +33,13 @@ public class TransacaoController {
     public List<Transacao> getTransacao(){
         return transacaoService.getTransacao();
     }
+    @GetMapping("/estatistica")
+    public Estatistica getEstatistica(){
+        return transacaoService.getEstatistica();
+    }
     @DeleteMapping("/delete")
     public void removerTransacao(){
         transacaoService.deletarTransacao();
     }
+
 }
