@@ -6,10 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.math.BigDecimal;
 import java.time.OffsetDateTime;
@@ -21,7 +18,7 @@ public record TransacaoController(TransacaoRepository transacaoRepository) {
 
     @PostMapping
     public ResponseEntity adicionar(@RequestBody TransacaoRequest transacaoRequest) {
-        log.info("Adicionando transacao");
+        log.info("Adicionando transação");
 
         try {
             validarTransacao(transacaoRequest);
@@ -32,6 +29,13 @@ public record TransacaoController(TransacaoRepository transacaoRepository) {
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
         }
+    }
+
+    @DeleteMapping
+    public ResponseEntity limpar() {
+        log.info("Limpando as transações");
+        transacaoRepository.limpar();
+        return ResponseEntity.status(HttpStatus.OK).build();
     }
 
 

@@ -15,4 +15,10 @@ public class TransacaoRepository {
     public void add(TransacaoRequest transacaoRequest) {
         transacoes.add(transacaoRequest);
     }
+
+    //Metodo para limpar
+    public void limpar(){
+        transacoes.clear();
+    }
+
 }
