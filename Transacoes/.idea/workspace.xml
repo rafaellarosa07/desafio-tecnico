@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb48cb34-4406-4b3e-abcf-054bd75119a7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../DesafioAPITransacao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DesafioAPITransacao/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DesafioAPITransacao/src/main/java/org/example/desafioapitransacao/DTO/Transacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DesafioAPITransacao/src/main/java/org/example/desafioapitransacao/DTO/Transacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DesafioAPITransacao/src/main/java/org/example/desafioapitransacao/controller/TransacaoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DesafioAPITransacao/src/main/java/org/example/desafioapitransacao/controller/TransacaoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DesafioAPITransacao/src/main/java/org/example/desafioapitransacao/service/TransacaoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DesafioAPITransacao/src/main/java/org/example/desafioapitransacao/service/TransacaoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DesafioAPITransacao/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../DesafioAPITransacao/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,27 +26,27 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2hQR6TH1HJw5bW0XFyWYrUsOQLG" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feat/gustavo",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feat/gustavo&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="TransacoesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Transacoes" />
