@@ -2,7 +2,6 @@ package org.example.desafioapitransacao.service;
 
 import org.example.desafioapitransacao.DTO.Estatistica;
 import org.example.desafioapitransacao.DTO.Transacao;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.OffsetDateTime;
@@ -12,10 +11,10 @@ import java.util.List;
 public class TransacaoService {
 
     public void receberTransacao(Transacao novaTransacao) {
-        if(novaTransacao.getDataTransacao().isBefore(OffsetDateTime.now()) && novaTransacao.getValor() >= 0) {
+        if(novaTransacao.getDataHora().isBefore(OffsetDateTime.now()) && novaTransacao.getValor() >= 0) {
             Transacao.addTransacao(novaTransacao);
         }
-        else if (novaTransacao.getDataTransacao().isAfter(OffsetDateTime.now()) || novaTransacao.getValor() < 0) {
+        else if (novaTransacao.getDataHora().isAfter(OffsetDateTime.now()) || novaTransacao.getValor() < 0) {
             throw new IllegalArgumentException("O valor da transação é negativo ou a data está em um momento futuro.");
         }
         else{
@@ -25,8 +24,9 @@ public class TransacaoService {
     public List<Transacao> getTransacao() {
         return Transacao.getTransacoes();
     }
-    public Estatistica getEstatistica(){
-        return Transacao.getEstatistica();
+    public Estatistica getEstatistica(int tempo){
+        System.out.println("Tempo Service: " + tempo);
+        return Transacao.getEstatistica(tempo);
     }
     public void deletarTransacao() {
         Transacao.deleteTransacao();

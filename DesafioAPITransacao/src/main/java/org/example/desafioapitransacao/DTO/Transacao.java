@@ -25,11 +25,11 @@ public class Transacao {
     public void setValor(double valor) {
         this.valor = valor;
     }
-    public OffsetDateTime getDataTransacao() {
+    public OffsetDateTime getDataHora() {
         return dataHora;
     }
-    public void setDataTransacao(OffsetDateTime dataTransacao) {
-        this.dataHora = dataTransacao;
+    public void setDataHora(OffsetDateTime dataHora) {
+        this.dataHora = dataHora;
     }
     public static void addTransacao(Transacao transacao) {
         transacoes.add(transacao);
@@ -40,13 +40,13 @@ public class Transacao {
     public static void deleteTransacao(){
         transacoes.clear();
     }
-    public static Estatistica getEstatistica() {
-
-        OffsetDateTime dataHoraAtual = OffsetDateTime.now().truncatedTo(ChronoUnit.SECONDS);
-
+    public static Estatistica getEstatistica(int tempo) {
+        System.out.println("Tempo Entidade: " + tempo);
+        OffsetDateTime dataHoraAtual = OffsetDateTime.now();
+        System.out.println(dataHoraAtual);
         List<Transacao> transacoesDosUltimos60segundos = transacoes.stream()
-                .filter(ultimasTransacoes -> ultimasTransacoes.getDataTransacao()
-                        .isAfter(dataHoraAtual.minusSeconds(60)))
+                .filter(ultimasTransacoes -> ultimasTransacoes.getDataHora()
+                        .isAfter(dataHoraAtual.minusSeconds(tempo)))
                 .collect(Collectors.toUnmodifiableList());
 
         int qtdTransacoes = transacoesDosUltimos60segundos.size();

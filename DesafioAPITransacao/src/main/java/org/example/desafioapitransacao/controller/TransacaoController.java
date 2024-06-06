@@ -34,8 +34,16 @@ public class TransacaoController {
         return transacaoService.getTransacao();
     }
     @GetMapping("/estatistica")
-    public Estatistica getEstatistica(){
-        return transacaoService.getEstatistica();
+
+    public ResponseEntity<Estatistica> getEstatistica(@RequestParam(defaultValue = "60")int tempo){
+        System.out.println("Tempo Controller: " + tempo);
+        try{
+            return ResponseEntity.ok(transacaoService.getEstatistica(tempo));
+        }catch (IllegalArgumentException e) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+        }
     }
     @DeleteMapping("/delete")
     public void removerTransacao(){
