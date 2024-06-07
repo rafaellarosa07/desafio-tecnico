@@ -633,3 +633,193 @@
 2024-06-07T01:12:16.365-03:00  INFO 7276 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@485451d8
 2024-06-07T01:12:16.365-03:00 ERROR 7276 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : payload errado.
 2024-06-07T01:12:16.372-03:00  INFO 7276 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T11:27:31.838-03:00  INFO 4632 --- [desafioAPITransacao] [main] o.e.d.DesafioApiTransacaoApplication     : Starting DesafioApiTransacaoApplication using Java 22.0.1 with PID 4632 (C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao\target\classes started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\desafioAPITransacao)
+2024-06-07T11:27:31.840-03:00 DEBUG 4632 --- [desafioAPITransacao] [main] o.e.d.DesafioApiTransacaoApplication     : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-07T11:27:31.841-03:00  INFO 4632 --- [desafioAPITransacao] [main] o.e.d.DesafioApiTransacaoApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-06-07T11:27:32.675-03:00  INFO 4632 --- [desafioAPITransacao] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-07T11:27:32.685-03:00  INFO 4632 --- [desafioAPITransacao] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-07T11:27:32.685-03:00  INFO 4632 --- [desafioAPITransacao] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-07T11:27:32.726-03:00  INFO 4632 --- [desafioAPITransacao] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-07T11:27:32.726-03:00  INFO 4632 --- [desafioAPITransacao] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 854 ms
+2024-06-07T11:27:33.189-03:00  INFO 4632 --- [desafioAPITransacao] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2024-06-07T11:27:33.235-03:00  INFO 4632 --- [desafioAPITransacao] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-07T11:27:33.245-03:00  INFO 4632 --- [desafioAPITransacao] [main] o.e.d.DesafioApiTransacaoApplication     : Started DesafioApiTransacaoApplication in 1.739 seconds (process running for 2.231)
+2024-06-07T11:27:33.724-03:00  INFO 4632 --- [desafioAPITransacao] [RMI TCP Connection(1)-192.168.0.228] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-07T11:27:33.725-03:00  INFO 4632 --- [desafioAPITransacao] [RMI TCP Connection(1)-192.168.0.228] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-07T11:27:33.726-03:00  INFO 4632 --- [desafioAPITransacao] [RMI TCP Connection(1)-192.168.0.228] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-06-07T11:27:42.395-03:00  INFO 4632 --- [desafioAPITransacao] [http-nio-8080-exec-1] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@608a3b47
+2024-06-07T11:27:42.396-03:00  INFO 4632 --- [desafioAPITransacao] [http-nio-8080-exec-1] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-07T11:27:42.398-03:00 ERROR 4632 --- [desafioAPITransacao] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.example.desafioapitransacao.repository.TransacaoRepository.addTransacao(org.example.desafioapitransacao.DTO.Transacao)" because "this.transacaoRepository" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "org.example.desafioapitransacao.repository.TransacaoRepository.addTransacao(org.example.desafioapitransacao.DTO.Transacao)" because "this.transacaoRepository" is null
+	at org.example.desafioapitransacao.service.TransacaoService.receberTransacao(TransacaoService.java:33) ~[classes/:na]
+	at org.example.desafioapitransacao.controller.TransacaoController.receberTransacao(TransacaoController.java:27) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.24.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.24.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2024-06-07T11:28:37.802-03:00  INFO 13912 --- [desafioAPITransacao] [main] o.e.d.DesafioApiTransacaoApplication     : Starting DesafioApiTransacaoApplication using Java 22.0.1 with PID 13912 (C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao\target\classes started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\desafioAPITransacao)
+2024-06-07T11:28:37.804-03:00 DEBUG 13912 --- [desafioAPITransacao] [main] o.e.d.DesafioApiTransacaoApplication     : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-07T11:28:37.804-03:00  INFO 13912 --- [desafioAPITransacao] [main] o.e.d.DesafioApiTransacaoApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-06-07T11:28:38.605-03:00  INFO 13912 --- [desafioAPITransacao] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-07T11:28:38.613-03:00  INFO 13912 --- [desafioAPITransacao] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-07T11:28:38.613-03:00  INFO 13912 --- [desafioAPITransacao] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-07T11:28:38.650-03:00  INFO 13912 --- [desafioAPITransacao] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-07T11:28:38.650-03:00  INFO 13912 --- [desafioAPITransacao] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 816 ms
+2024-06-07T11:28:39.078-03:00  INFO 13912 --- [desafioAPITransacao] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2024-06-07T11:28:39.116-03:00  INFO 13912 --- [desafioAPITransacao] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-07T11:28:39.125-03:00  INFO 13912 --- [desafioAPITransacao] [main] o.e.d.DesafioApiTransacaoApplication     : Started DesafioApiTransacaoApplication in 1.633 seconds (process running for 2.033)
+2024-06-07T11:28:39.241-03:00  INFO 13912 --- [desafioAPITransacao] [RMI TCP Connection(1)-192.168.0.228] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-07T11:28:39.242-03:00  INFO 13912 --- [desafioAPITransacao] [RMI TCP Connection(1)-192.168.0.228] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-07T11:28:39.243-03:00  INFO 13912 --- [desafioAPITransacao] [RMI TCP Connection(1)-192.168.0.228] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-06-07T11:28:48.394-03:00  INFO 13912 --- [desafioAPITransacao] [http-nio-8080-exec-2] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@43d24160
+2024-06-07T11:28:48.395-03:00  INFO 13912 --- [desafioAPITransacao] [http-nio-8080-exec-2] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-07T11:28:51.859-03:00  INFO 13912 --- [desafioAPITransacao] [http-nio-8080-exec-3] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@2e778924
+2024-06-07T11:28:51.860-03:00  INFO 13912 --- [desafioAPITransacao] [http-nio-8080-exec-3] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-07T11:28:52.776-03:00  INFO 13912 --- [desafioAPITransacao] [http-nio-8080-exec-7] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@3714b817
+2024-06-07T11:28:52.776-03:00  INFO 13912 --- [desafioAPITransacao] [http-nio-8080-exec-7] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-07T11:28:59.093-03:00  INFO 13912 --- [desafioAPITransacao] [http-nio-8080-exec-8] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T11:28:59.093-03:00  INFO 13912 --- [desafioAPITransacao] [http-nio-8080-exec-8] o.e.d.service.TransacaoService           : Retornando lista de transacoes
+2024-06-07T11:29:29.464-03:00  INFO 13912 --- [desafioAPITransacao] [http-nio-8080-exec-6] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@37524c9b
+2024-06-07T11:29:29.464-03:00  INFO 13912 --- [desafioAPITransacao] [http-nio-8080-exec-6] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-07T11:29:30.137-03:00  INFO 13912 --- [desafioAPITransacao] [http-nio-8080-exec-4] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@c3f4496
+2024-06-07T11:29:30.137-03:00  INFO 13912 --- [desafioAPITransacao] [http-nio-8080-exec-4] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-07T11:29:30.800-03:00  INFO 13912 --- [desafioAPITransacao] [http-nio-8080-exec-9] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@a92b83d
+2024-06-07T11:29:30.800-03:00  INFO 13912 --- [desafioAPITransacao] [http-nio-8080-exec-9] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-07T11:29:35.297-03:00  INFO 13912 --- [desafioAPITransacao] [http-nio-8080-exec-5] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T11:29:35.297-03:00  INFO 13912 --- [desafioAPITransacao] [http-nio-8080-exec-5] o.e.d.service.TransacaoService           : Retornando lista de transacoes
+2024-06-07T11:29:35.297-03:00  INFO 13912 --- [desafioAPITransacao] [http-nio-8080-exec-5] o.e.d.service.TransacaoService           : Retornando lista de transacoes
+2024-06-07T11:29:35.298-03:00  INFO 13912 --- [desafioAPITransacao] [http-nio-8080-exec-5] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 1.3593 milisegundos
+2024-06-07T11:29:35.298-03:00  INFO 13912 --- [desafioAPITransacao] [http-nio-8080-exec-5] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T11:29:43.877-03:00  INFO 13912 --- [desafioAPITransacao] [http-nio-8080-exec-10] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T11:29:43.877-03:00  INFO 13912 --- [desafioAPITransacao] [http-nio-8080-exec-10] o.e.d.service.TransacaoService           : Retornando lista de transacoes
+2024-06-07T11:31:06.068-03:00  INFO 25632 --- [desafioAPITransacao] [main] o.e.d.DesafioApiTransacaoApplication     : Starting DesafioApiTransacaoApplication using Java 22.0.1 with PID 25632 (C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao\target\classes started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\desafioAPITransacao)
+2024-06-07T11:31:06.069-03:00 DEBUG 25632 --- [desafioAPITransacao] [main] o.e.d.DesafioApiTransacaoApplication     : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-07T11:31:06.069-03:00  INFO 25632 --- [desafioAPITransacao] [main] o.e.d.DesafioApiTransacaoApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-06-07T11:31:06.891-03:00  INFO 25632 --- [desafioAPITransacao] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-07T11:31:06.899-03:00  INFO 25632 --- [desafioAPITransacao] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-07T11:31:06.899-03:00  INFO 25632 --- [desafioAPITransacao] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-07T11:31:06.937-03:00  INFO 25632 --- [desafioAPITransacao] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-07T11:31:06.938-03:00  INFO 25632 --- [desafioAPITransacao] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 835 ms
+2024-06-07T11:31:07.359-03:00  INFO 25632 --- [desafioAPITransacao] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2024-06-07T11:31:07.398-03:00  INFO 25632 --- [desafioAPITransacao] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-07T11:31:07.407-03:00  INFO 25632 --- [desafioAPITransacao] [main] o.e.d.DesafioApiTransacaoApplication     : Started DesafioApiTransacaoApplication in 1.658 seconds (process running for 2.067)
+2024-06-07T11:31:07.521-03:00  INFO 25632 --- [desafioAPITransacao] [RMI TCP Connection(2)-192.168.0.228] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-07T11:31:07.521-03:00  INFO 25632 --- [desafioAPITransacao] [RMI TCP Connection(2)-192.168.0.228] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-07T11:31:07.522-03:00  INFO 25632 --- [desafioAPITransacao] [RMI TCP Connection(2)-192.168.0.228] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-06-07T11:31:13.004-03:00  INFO 25632 --- [desafioAPITransacao] [http-nio-8080-exec-1] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T11:31:13.004-03:00  INFO 25632 --- [desafioAPITransacao] [http-nio-8080-exec-1] o.e.d.service.TransacaoService           : Nao foi possivel retornar transacoes, a lista esta vazia.
+2024-06-07T11:31:13.004-03:00 ERROR 25632 --- [desafioAPITransacao] [http-nio-8080-exec-1] o.e.d.controller.TransacaoController     : Flags = 'A lista esta vazia'
+2024-06-07T11:31:17.691-03:00  INFO 25632 --- [desafioAPITransacao] [http-nio-8080-exec-4] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T11:31:17.691-03:00  INFO 25632 --- [desafioAPITransacao] [http-nio-8080-exec-4] o.e.d.service.TransacaoService           : Nao foi possivel retornar transacoes, a lista esta vazia.
+2024-06-07T11:31:17.692-03:00 ERROR 25632 --- [desafioAPITransacao] [http-nio-8080-exec-4] o.e.d.controller.TransacaoController     : Flags = 'A lista esta vazia'
+2024-06-07T11:31:23.939-03:00  INFO 25632 --- [desafioAPITransacao] [http-nio-8080-exec-7] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@4882b10c
+2024-06-07T11:31:23.940-03:00  INFO 25632 --- [desafioAPITransacao] [http-nio-8080-exec-7] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-07T11:31:24.626-03:00  INFO 25632 --- [desafioAPITransacao] [http-nio-8080-exec-10] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@37524c9b
+2024-06-07T11:31:24.626-03:00  INFO 25632 --- [desafioAPITransacao] [http-nio-8080-exec-10] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-07T11:31:25.294-03:00  INFO 25632 --- [desafioAPITransacao] [http-nio-8080-exec-6] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@2377b976
+2024-06-07T11:31:25.294-03:00  INFO 25632 --- [desafioAPITransacao] [http-nio-8080-exec-6] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-07T11:31:32.322-03:00  INFO 25632 --- [desafioAPITransacao] [http-nio-8080-exec-3] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T11:31:32.323-03:00  INFO 25632 --- [desafioAPITransacao] [http-nio-8080-exec-3] o.e.d.service.TransacaoService           : Retornando lista de transacoes
+2024-06-07T11:31:32.323-03:00  INFO 25632 --- [desafioAPITransacao] [http-nio-8080-exec-3] o.e.d.service.TransacaoService           : Retornando lista de transacoes
+2024-06-07T11:31:32.325-03:00  INFO 25632 --- [desafioAPITransacao] [http-nio-8080-exec-3] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 1.7801 milisegundos
+2024-06-07T11:31:32.325-03:00  INFO 25632 --- [desafioAPITransacao] [http-nio-8080-exec-3] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T11:31:38.865-03:00  INFO 25632 --- [desafioAPITransacao] [http-nio-8080-exec-8] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T11:31:38.865-03:00  INFO 25632 --- [desafioAPITransacao] [http-nio-8080-exec-8] o.e.d.service.TransacaoService           : Retornando lista de transacoes
+2024-06-07T11:31:50.536-03:00  INFO 25632 --- [desafioAPITransacao] [http-nio-8080-exec-9] o.e.d.controller.TransacaoController     : Removendo todas as transacoes.
+2024-06-07T11:31:50.537-03:00  INFO 25632 --- [desafioAPITransacao] [http-nio-8080-exec-9] o.e.d.service.TransacaoService           : Excluindo registro de transacao
+2024-06-07T11:31:50.537-03:00  INFO 25632 --- [desafioAPITransacao] [http-nio-8080-exec-9] o.e.d.service.TransacaoService           : Estado da lista antes da exclusão: 3
+2024-06-07T11:31:50.537-03:00  INFO 25632 --- [desafioAPITransacao] [http-nio-8080-exec-9] o.e.d.service.TransacaoService           : Estado da lista antes da exclusão: 0
+2024-06-07T11:32:04.934-03:00  INFO 25632 --- [desafioAPITransacao] [http-nio-8080-exec-5] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T11:32:04.934-03:00  INFO 25632 --- [desafioAPITransacao] [http-nio-8080-exec-5] o.e.d.service.TransacaoService           : Nao foi possivel retornar transacoes, a lista esta vazia.
+2024-06-07T11:32:04.935-03:00 ERROR 25632 --- [desafioAPITransacao] [http-nio-8080-exec-5] o.e.d.controller.TransacaoController     : Flags = 'A lista esta vazia'
+2024-06-07T17:07:23.510-03:00  INFO 6180 --- [desafioAPITransacao] [main] .e.d.DesafioApiTransacaoApplicationTests : Starting DesafioApiTransacaoApplicationTests using Java 22.0.1 with PID 6180 (started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao)
+2024-06-07T17:07:23.512-03:00 DEBUG 6180 --- [desafioAPITransacao] [main] .e.d.DesafioApiTransacaoApplicationTests : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-07T17:07:23.514-03:00  INFO 6180 --- [desafioAPITransacao] [main] .e.d.DesafioApiTransacaoApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-06-07T17:07:25.614-03:00  INFO 6180 --- [desafioAPITransacao] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2024-06-07T17:07:25.665-03:00  INFO 6180 --- [desafioAPITransacao] [main] .e.d.DesafioApiTransacaoApplicationTests : Started DesafioApiTransacaoApplicationTests in 2.667 seconds (process running for 5.865)
+2024-06-07T17:07:25.763-03:00  INFO 6180 --- [desafioAPITransacao] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.example.desafioapitransacao.controller.TransacaoControllerTest]: TransacaoControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-06-07T17:07:25.784-03:00  INFO 6180 --- [desafioAPITransacao] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.example.desafioapitransacao.DesafioApiTransacaoApplication for test class org.example.desafioapitransacao.controller.TransacaoControllerTest
+2024-06-07T17:07:25.812-03:00  INFO 6180 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Starting TransacaoControllerTest using Java 22.0.1 with PID 6180 (started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao)
+2024-06-07T17:07:25.812-03:00 DEBUG 6180 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-07T17:07:25.813-03:00  INFO 6180 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2024-06-07T17:07:26.017-03:00  INFO 6180 --- [desafioAPITransacao] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-07T17:07:26.017-03:00  INFO 6180 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-07T17:07:26.018-03:00  INFO 6180 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-06-07T17:07:26.026-03:00  INFO 6180 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Started TransacaoControllerTest in 0.237 seconds (process running for 6.226)
+2024-06-07T17:07:26.105-03:00  INFO 6180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T17:07:26.106-03:00 ERROR 6180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A lista esta vazia
+2024-06-07T17:07:26.280-03:00  INFO 6180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@391082c8
+2024-06-07T17:07:26.290-03:00  INFO 6180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Removendo todas as transacoes.
+2024-06-07T17:07:26.298-03:00  INFO 6180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T17:07:26.298-03:00 ERROR 6180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Nao ha registro de transacoes para o intervalo de tempo escolhido
+2024-06-07T17:07:26.306-03:00  INFO 6180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T17:07:26.306-03:00 ERROR 6180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A lista de transacoes esta vazia
+2024-06-07T17:07:26.311-03:00  INFO 6180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T17:07:26.311-03:00 ERROR 6180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Nao ha registro de transacoes para o intervalo de tempo escolhido
+2024-06-07T17:07:26.316-03:00  INFO 6180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@55ab91af
+2024-06-07T17:07:26.316-03:00 ERROR 6180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo e a data da transacao nao pode estar em um momento futuro.
+2024-06-07T17:07:26.322-03:00  INFO 6180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@234fd063
+2024-06-07T17:07:26.322-03:00 ERROR 6180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A data da transacao nao pode estar em um momento futuro.
+2024-06-07T17:07:26.328-03:00  INFO 6180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T17:07:26.328-03:00  INFO 6180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 0.1469 milisegundos
+2024-06-07T17:07:26.329-03:00  INFO 6180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T17:07:26.340-03:00  INFO 6180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@201c4bbb
+2024-06-07T17:07:26.340-03:00 ERROR 6180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo.
+2024-06-07T17:07:26.345-03:00  INFO 6180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T17:07:26.346-03:00  INFO 6180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 0.1476 milisegundos
+2024-06-07T17:07:26.346-03:00  INFO 6180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T17:07:26.359-03:00  INFO 6180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Removendo todas as transacoes.
+2024-06-07T17:07:26.360-03:00 ERROR 6180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Houve algum problema ao tentar apagar os itens da lista.
+2024-06-07T17:07:26.364-03:00  INFO 6180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@46d5682e
+2024-06-07T17:07:26.365-03:00 ERROR 6180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : payload errado.
+2024-06-07T17:07:26.370-03:00  INFO 6180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
