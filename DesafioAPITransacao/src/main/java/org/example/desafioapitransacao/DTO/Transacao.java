@@ -2,9 +2,7 @@ package org.example.desafioapitransacao.DTO;
 
 import jakarta.validation.constraints.NotNull;
 import java.time.OffsetDateTime;
-import java.time.temporal.ChronoUnit;
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class Transacao {
     @NotNull

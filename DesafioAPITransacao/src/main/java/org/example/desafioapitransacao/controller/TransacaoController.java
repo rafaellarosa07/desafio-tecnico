@@ -54,7 +54,18 @@ public class TransacaoController {
     public ResponseEntity<Estatistica> getEstatistica(@RequestParam(defaultValue = "60")int tempo){
         try{
             logger.info("Exibindo estatisticas de transacao.");
-            return ResponseEntity.ok(transacaoService.getEstatistica(tempo));
+            long chamarEstatisticas = System.nanoTime();
+
+            Estatistica estatistica = transacaoService.getEstatistica(tempo);
+
+            long estatisticasRecebidas = System.nanoTime();
+            long tempoParaRespostaDeEstatisticas = estatisticasRecebidas - chamarEstatisticas;
+
+            double duracaoEmmiliSegundos = tempoParaRespostaDeEstatisticas / 1e6;
+
+            logger.info("Tempo gasto para calcular estatisticas: " + duracaoEmmiliSegundos + " milisegundos");
+            logger.info("Exibindo estatisticas de transacao.");
+            return ResponseEntity.ok(estatistica);
         }catch (IllegalArgumentException e) {
             logger.error(e.getMessage());
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
