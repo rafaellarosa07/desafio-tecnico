@@ -1,0 +1,635 @@
+2024-06-06T22:21:06.183-03:00  INFO 7824 --- [desafioAPITransacao] [main] o.e.d.DesafioApiTransacaoApplication     : Starting DesafioApiTransacaoApplication using Java 22.0.1 with PID 7824 (C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao\target\classes started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\desafioAPITransacao)
+2024-06-06T22:21:06.184-03:00 DEBUG 7824 --- [desafioAPITransacao] [main] o.e.d.DesafioApiTransacaoApplication     : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-06T22:21:06.185-03:00  INFO 7824 --- [desafioAPITransacao] [main] o.e.d.DesafioApiTransacaoApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-06-06T22:21:07.105-03:00  INFO 7824 --- [desafioAPITransacao] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-06T22:21:07.115-03:00  INFO 7824 --- [desafioAPITransacao] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-06T22:21:07.115-03:00  INFO 7824 --- [desafioAPITransacao] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-06T22:21:07.165-03:00  INFO 7824 --- [desafioAPITransacao] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-06T22:21:07.166-03:00  INFO 7824 --- [desafioAPITransacao] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 947 ms
+2024-06-06T22:21:07.775-03:00  INFO 7824 --- [desafioAPITransacao] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2024-06-06T22:21:07.828-03:00  INFO 7824 --- [desafioAPITransacao] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-06T22:21:07.838-03:00  INFO 7824 --- [desafioAPITransacao] [main] o.e.d.DesafioApiTransacaoApplication     : Started DesafioApiTransacaoApplication in 2.01 seconds (process running for 2.895)
+2024-06-06T22:21:08.036-03:00  INFO 7824 --- [desafioAPITransacao] [RMI TCP Connection(2)-192.168.0.228] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-06T22:21:08.036-03:00  INFO 7824 --- [desafioAPITransacao] [RMI TCP Connection(2)-192.168.0.228] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-06T22:21:08.038-03:00  INFO 7824 --- [desafioAPITransacao] [RMI TCP Connection(2)-192.168.0.228] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-06-06T22:21:47.391-03:00  INFO 7824 --- [desafioAPITransacao] [http-nio-8080-exec-1] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@5785e696
+2024-06-06T22:21:47.393-03:00  INFO 7824 --- [desafioAPITransacao] [http-nio-8080-exec-1] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-06T22:21:48.689-03:00  INFO 7824 --- [desafioAPITransacao] [http-nio-8080-exec-3] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@22ea942b
+2024-06-06T22:21:48.689-03:00  INFO 7824 --- [desafioAPITransacao] [http-nio-8080-exec-3] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-06T22:22:04.053-03:00  INFO 7824 --- [desafioAPITransacao] [http-nio-8080-exec-4] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-06T22:22:04.053-03:00  INFO 7824 --- [desafioAPITransacao] [http-nio-8080-exec-4] o.e.d.service.TransacaoService           : Retornando lista de transacoes
+2024-06-06T22:22:10.625-03:00  INFO 7824 --- [desafioAPITransacao] [http-nio-8080-exec-5] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-06T22:22:10.625-03:00  INFO 7824 --- [desafioAPITransacao] [http-nio-8080-exec-5] o.e.d.service.TransacaoService           : Retornando lista de transacoes
+2024-06-06T22:22:10.625-03:00  INFO 7824 --- [desafioAPITransacao] [http-nio-8080-exec-5] o.e.d.service.TransacaoService           : Retornando lista de transacoes
+2024-06-06T22:22:10.626-03:00 ERROR 7824 --- [desafioAPITransacao] [http-nio-8080-exec-5] o.e.d.controller.TransacaoController     : Nao ha registro de transacoes para o intervalo de tempo escolhido
+2024-06-06T22:22:29.926-03:00  INFO 7824 --- [desafioAPITransacao] [http-nio-8080-exec-6] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-06T22:22:29.926-03:00  INFO 7824 --- [desafioAPITransacao] [http-nio-8080-exec-6] o.e.d.service.TransacaoService           : Retornando lista de transacoes
+2024-06-06T22:22:29.926-03:00  INFO 7824 --- [desafioAPITransacao] [http-nio-8080-exec-6] o.e.d.service.TransacaoService           : Retornando lista de transacoes
+2024-06-06T22:32:33.934-03:00  INFO 24416 --- [desafioAPITransacao] [main] o.e.d.DesafioApiTransacaoApplication     : Starting DesafioApiTransacaoApplication using Java 22.0.1 with PID 24416 (C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao\target\classes started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\desafioAPITransacao)
+2024-06-06T22:32:33.936-03:00 DEBUG 24416 --- [desafioAPITransacao] [main] o.e.d.DesafioApiTransacaoApplication     : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-06T22:32:33.937-03:00  INFO 24416 --- [desafioAPITransacao] [main] o.e.d.DesafioApiTransacaoApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-06-06T22:32:34.857-03:00  INFO 24416 --- [desafioAPITransacao] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-06T22:32:34.866-03:00  INFO 24416 --- [desafioAPITransacao] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-06T22:32:34.867-03:00  INFO 24416 --- [desafioAPITransacao] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-06T22:32:34.907-03:00  INFO 24416 --- [desafioAPITransacao] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-06T22:32:34.907-03:00  INFO 24416 --- [desafioAPITransacao] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 927 ms
+2024-06-06T22:32:35.396-03:00  INFO 24416 --- [desafioAPITransacao] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2024-06-06T22:32:35.437-03:00  INFO 24416 --- [desafioAPITransacao] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-06T22:32:35.447-03:00  INFO 24416 --- [desafioAPITransacao] [main] o.e.d.DesafioApiTransacaoApplication     : Started DesafioApiTransacaoApplication in 1.829 seconds (process running for 2.242)
+2024-06-06T22:32:35.920-03:00  INFO 24416 --- [desafioAPITransacao] [RMI TCP Connection(2)-192.168.0.228] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-06T22:32:35.921-03:00  INFO 24416 --- [desafioAPITransacao] [RMI TCP Connection(2)-192.168.0.228] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-06T22:32:35.922-03:00  INFO 24416 --- [desafioAPITransacao] [RMI TCP Connection(2)-192.168.0.228] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-06-06T22:32:44.373-03:00  INFO 24416 --- [desafioAPITransacao] [http-nio-8080-exec-2] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@505fcf66
+2024-06-06T22:32:44.374-03:00  INFO 24416 --- [desafioAPITransacao] [http-nio-8080-exec-2] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-06T22:32:45.016-03:00  INFO 24416 --- [desafioAPITransacao] [http-nio-8080-exec-3] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@177d0986
+2024-06-06T22:32:45.016-03:00  INFO 24416 --- [desafioAPITransacao] [http-nio-8080-exec-3] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-06T22:32:45.611-03:00  INFO 24416 --- [desafioAPITransacao] [http-nio-8080-exec-5] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@8d9d961
+2024-06-06T22:32:45.612-03:00  INFO 24416 --- [desafioAPITransacao] [http-nio-8080-exec-5] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-06T22:32:46.207-03:00  INFO 24416 --- [desafioAPITransacao] [http-nio-8080-exec-6] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@2c8ebd9a
+2024-06-06T22:32:46.207-03:00  INFO 24416 --- [desafioAPITransacao] [http-nio-8080-exec-6] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-06T22:32:46.818-03:00  INFO 24416 --- [desafioAPITransacao] [http-nio-8080-exec-7] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@10d29268
+2024-06-06T22:32:46.818-03:00  INFO 24416 --- [desafioAPITransacao] [http-nio-8080-exec-7] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-06T22:32:47.347-03:00  INFO 24416 --- [desafioAPITransacao] [http-nio-8080-exec-8] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@75f4f768
+2024-06-06T22:32:47.347-03:00  INFO 24416 --- [desafioAPITransacao] [http-nio-8080-exec-8] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-06T22:32:47.879-03:00  INFO 24416 --- [desafioAPITransacao] [http-nio-8080-exec-4] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@7b8bbe78
+2024-06-06T22:32:47.879-03:00  INFO 24416 --- [desafioAPITransacao] [http-nio-8080-exec-4] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-06T22:32:48.408-03:00  INFO 24416 --- [desafioAPITransacao] [http-nio-8080-exec-9] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@5f83f099
+2024-06-06T22:32:48.408-03:00  INFO 24416 --- [desafioAPITransacao] [http-nio-8080-exec-9] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-06T22:32:48.971-03:00  INFO 24416 --- [desafioAPITransacao] [http-nio-8080-exec-10] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@7ccbc724
+2024-06-06T22:32:48.971-03:00  INFO 24416 --- [desafioAPITransacao] [http-nio-8080-exec-10] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-06T22:32:49.502-03:00  INFO 24416 --- [desafioAPITransacao] [http-nio-8080-exec-1] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@2c5f9da9
+2024-06-06T22:32:49.503-03:00  INFO 24416 --- [desafioAPITransacao] [http-nio-8080-exec-1] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-06T22:32:57.809-03:00  INFO 24416 --- [desafioAPITransacao] [http-nio-8080-exec-2] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@398288d3
+2024-06-06T22:32:57.810-03:00  INFO 24416 --- [desafioAPITransacao] [http-nio-8080-exec-2] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-06T22:33:04.882-03:00  INFO 24416 --- [desafioAPITransacao] [http-nio-8080-exec-3] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-06T22:33:04.882-03:00  INFO 24416 --- [desafioAPITransacao] [http-nio-8080-exec-3] o.e.d.service.TransacaoService           : Retornando lista de transacoes
+2024-06-06T22:33:04.883-03:00  INFO 24416 --- [desafioAPITransacao] [http-nio-8080-exec-3] o.e.d.service.TransacaoService           : Retornando lista de transacoes
+2024-06-06T22:33:04.884-03:00  INFO 24416 --- [desafioAPITransacao] [http-nio-8080-exec-3] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 1470400 nanosegundos
+2024-06-06T22:33:04.884-03:00  INFO 24416 --- [desafioAPITransacao] [http-nio-8080-exec-3] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-06T22:36:29.416-03:00  INFO 23908 --- [desafioAPITransacao] [main] o.e.d.DesafioApiTransacaoApplication     : Starting DesafioApiTransacaoApplication using Java 22.0.1 with PID 23908 (C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao\target\classes started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\desafioAPITransacao)
+2024-06-06T22:36:29.418-03:00 DEBUG 23908 --- [desafioAPITransacao] [main] o.e.d.DesafioApiTransacaoApplication     : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-06T22:36:29.419-03:00  INFO 23908 --- [desafioAPITransacao] [main] o.e.d.DesafioApiTransacaoApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-06-06T22:36:30.227-03:00  INFO 23908 --- [desafioAPITransacao] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-06T22:36:30.236-03:00  INFO 23908 --- [desafioAPITransacao] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-06T22:36:30.236-03:00  INFO 23908 --- [desafioAPITransacao] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-06T22:36:30.275-03:00  INFO 23908 --- [desafioAPITransacao] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-06T22:36:30.276-03:00  INFO 23908 --- [desafioAPITransacao] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 825 ms
+2024-06-06T22:36:30.743-03:00  INFO 23908 --- [desafioAPITransacao] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2024-06-06T22:36:30.784-03:00  INFO 23908 --- [desafioAPITransacao] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-06T22:36:30.794-03:00  INFO 23908 --- [desafioAPITransacao] [main] o.e.d.DesafioApiTransacaoApplication     : Started DesafioApiTransacaoApplication in 1.691 seconds (process running for 2.112)
+2024-06-06T22:36:31.351-03:00  INFO 23908 --- [desafioAPITransacao] [RMI TCP Connection(1)-192.168.0.228] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-06T22:36:31.351-03:00  INFO 23908 --- [desafioAPITransacao] [RMI TCP Connection(1)-192.168.0.228] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-06T22:36:31.352-03:00  INFO 23908 --- [desafioAPITransacao] [RMI TCP Connection(1)-192.168.0.228] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-06-06T22:36:41.186-03:00  INFO 23908 --- [desafioAPITransacao] [http-nio-8080-exec-1] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@29feebae
+2024-06-06T22:36:41.187-03:00  INFO 23908 --- [desafioAPITransacao] [http-nio-8080-exec-1] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-06T22:36:50.522-03:00  INFO 23908 --- [desafioAPITransacao] [http-nio-8080-exec-3] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@58edfe1f
+2024-06-06T22:36:50.522-03:00  INFO 23908 --- [desafioAPITransacao] [http-nio-8080-exec-3] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-06T22:36:51.671-03:00  INFO 23908 --- [desafioAPITransacao] [http-nio-8080-exec-4] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@177d0986
+2024-06-06T22:36:51.671-03:00  INFO 23908 --- [desafioAPITransacao] [http-nio-8080-exec-4] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-06T22:36:52.304-03:00  INFO 23908 --- [desafioAPITransacao] [http-nio-8080-exec-5] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@7b8bbe78
+2024-06-06T22:36:52.304-03:00  INFO 23908 --- [desafioAPITransacao] [http-nio-8080-exec-5] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-06T22:36:53.224-03:00  INFO 23908 --- [desafioAPITransacao] [http-nio-8080-exec-6] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@8d9d961
+2024-06-06T22:36:53.224-03:00  INFO 23908 --- [desafioAPITransacao] [http-nio-8080-exec-6] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-06T22:36:53.896-03:00  INFO 23908 --- [desafioAPITransacao] [http-nio-8080-exec-7] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@2c8ebd9a
+2024-06-06T22:36:53.896-03:00  INFO 23908 --- [desafioAPITransacao] [http-nio-8080-exec-7] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-06T22:36:59.388-03:00  INFO 23908 --- [desafioAPITransacao] [http-nio-8080-exec-8] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-06T22:36:59.388-03:00  INFO 23908 --- [desafioAPITransacao] [http-nio-8080-exec-8] o.e.d.service.TransacaoService           : Retornando lista de transacoes
+2024-06-06T22:36:59.388-03:00  INFO 23908 --- [desafioAPITransacao] [http-nio-8080-exec-8] o.e.d.service.TransacaoService           : Retornando lista de transacoes
+2024-06-06T22:36:59.390-03:00  INFO 23908 --- [desafioAPITransacao] [http-nio-8080-exec-8] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 1.8754 nanosegundos
+2024-06-06T22:36:59.390-03:00  INFO 23908 --- [desafioAPITransacao] [http-nio-8080-exec-8] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-06T22:39:29.128-03:00  INFO 22924 --- [desafioAPITransacao] [main] o.e.d.DesafioApiTransacaoApplication     : Starting DesafioApiTransacaoApplication using Java 22.0.1 with PID 22924 (C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao\target\classes started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\desafioAPITransacao)
+2024-06-06T22:39:29.129-03:00 DEBUG 22924 --- [desafioAPITransacao] [main] o.e.d.DesafioApiTransacaoApplication     : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-06T22:39:29.130-03:00  INFO 22924 --- [desafioAPITransacao] [main] o.e.d.DesafioApiTransacaoApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-06-06T22:39:29.968-03:00  INFO 22924 --- [desafioAPITransacao] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-06T22:39:29.977-03:00  INFO 22924 --- [desafioAPITransacao] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-06T22:39:29.977-03:00  INFO 22924 --- [desafioAPITransacao] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-06T22:39:30.015-03:00  INFO 22924 --- [desafioAPITransacao] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-06T22:39:30.016-03:00  INFO 22924 --- [desafioAPITransacao] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 856 ms
+2024-06-06T22:39:30.443-03:00  INFO 22924 --- [desafioAPITransacao] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2024-06-06T22:39:30.485-03:00  INFO 22924 --- [desafioAPITransacao] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-06T22:39:30.495-03:00  INFO 22924 --- [desafioAPITransacao] [main] o.e.d.DesafioApiTransacaoApplication     : Started DesafioApiTransacaoApplication in 1.663 seconds (process running for 2.067)
+2024-06-06T22:39:30.629-03:00  INFO 22924 --- [desafioAPITransacao] [RMI TCP Connection(3)-192.168.0.228] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-06T22:39:30.630-03:00  INFO 22924 --- [desafioAPITransacao] [RMI TCP Connection(3)-192.168.0.228] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-06T22:39:30.631-03:00  INFO 22924 --- [desafioAPITransacao] [RMI TCP Connection(3)-192.168.0.228] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-06-06T22:39:34.405-03:00  INFO 22924 --- [desafioAPITransacao] [http-nio-8080-exec-1] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-06T22:39:34.405-03:00  INFO 22924 --- [desafioAPITransacao] [http-nio-8080-exec-1] o.e.d.service.TransacaoService           : Nao foi possivel retornar transacoes, a lista esta vazia.
+2024-06-06T22:39:34.406-03:00 ERROR 22924 --- [desafioAPITransacao] [http-nio-8080-exec-1] o.e.d.controller.TransacaoController     : Flags = 'A lista esta vazia'
+2024-06-06T22:39:48.346-03:00  INFO 22924 --- [desafioAPITransacao] [http-nio-8080-exec-3] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@3d540aef
+2024-06-06T22:39:48.347-03:00  INFO 22924 --- [desafioAPITransacao] [http-nio-8080-exec-3] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-06T22:39:48.996-03:00  INFO 22924 --- [desafioAPITransacao] [http-nio-8080-exec-4] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@1622dc82
+2024-06-06T22:39:48.996-03:00  INFO 22924 --- [desafioAPITransacao] [http-nio-8080-exec-4] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-06T22:39:49.615-03:00  INFO 22924 --- [desafioAPITransacao] [http-nio-8080-exec-5] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@77a9373f
+2024-06-06T22:39:49.615-03:00  INFO 22924 --- [desafioAPITransacao] [http-nio-8080-exec-5] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-06T22:39:50.311-03:00  INFO 22924 --- [desafioAPITransacao] [http-nio-8080-exec-6] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@4df438ae
+2024-06-06T22:39:50.311-03:00  INFO 22924 --- [desafioAPITransacao] [http-nio-8080-exec-6] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-06T22:39:50.737-03:00  INFO 22924 --- [desafioAPITransacao] [http-nio-8080-exec-7] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@5e4e59ab
+2024-06-06T22:39:50.737-03:00  INFO 22924 --- [desafioAPITransacao] [http-nio-8080-exec-7] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-06T22:39:52.714-03:00  INFO 22924 --- [desafioAPITransacao] [http-nio-8080-exec-8] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-06T22:39:52.714-03:00  INFO 22924 --- [desafioAPITransacao] [http-nio-8080-exec-8] o.e.d.service.TransacaoService           : Retornando lista de transacoes
+2024-06-06T22:39:52.714-03:00  INFO 22924 --- [desafioAPITransacao] [http-nio-8080-exec-8] o.e.d.service.TransacaoService           : Retornando lista de transacoes
+2024-06-06T22:39:52.716-03:00  INFO 22924 --- [desafioAPITransacao] [http-nio-8080-exec-8] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 1.6177 milisegundos
+2024-06-06T22:39:52.716-03:00  INFO 22924 --- [desafioAPITransacao] [http-nio-8080-exec-8] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-06T22:40:14.097-03:00  INFO 22924 --- [desafioAPITransacao] [http-nio-8080-exec-9] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-06T22:40:14.097-03:00  INFO 22924 --- [desafioAPITransacao] [http-nio-8080-exec-9] o.e.d.service.TransacaoService           : Retornando lista de transacoes
+2024-06-06T22:40:14.097-03:00  INFO 22924 --- [desafioAPITransacao] [http-nio-8080-exec-9] o.e.d.service.TransacaoService           : Retornando lista de transacoes
+2024-06-06T22:40:14.097-03:00  INFO 22924 --- [desafioAPITransacao] [http-nio-8080-exec-9] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 0.1511 milisegundos
+2024-06-06T22:40:14.097-03:00  INFO 22924 --- [desafioAPITransacao] [http-nio-8080-exec-9] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-06T23:08:34.701-03:00  INFO 3468 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Starting TransacaoControllerTest using Java 22.0.1 with PID 3468 (started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao)
+2024-06-06T23:08:34.702-03:00 DEBUG 3468 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-06T23:08:34.703-03:00  INFO 3468 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2024-06-06T23:08:36.596-03:00  INFO 3468 --- [desafioAPITransacao] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-06T23:08:36.596-03:00  INFO 3468 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-06T23:08:36.598-03:00  INFO 3468 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2024-06-06T23:08:36.637-03:00  INFO 3468 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Started TransacaoControllerTest in 2.318 seconds (process running for 3.425)
+2024-06-06T23:10:35.722-03:00  INFO 19332 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Starting TransacaoControllerTest using Java 22.0.1 with PID 19332 (started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao)
+2024-06-06T23:10:35.722-03:00 DEBUG 19332 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-06T23:10:35.723-03:00  INFO 19332 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2024-06-06T23:10:37.538-03:00  INFO 19332 --- [desafioAPITransacao] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-06T23:10:37.539-03:00  INFO 19332 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-06T23:10:37.542-03:00  INFO 19332 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2024-06-06T23:10:37.581-03:00  INFO 19332 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Started TransacaoControllerTest in 2.236 seconds (process running for 3.02)
+2024-06-06T23:10:37.781-03:00  INFO 19332 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@a9a8ec3
+2024-06-06T23:11:24.898-03:00  INFO 23168 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Starting TransacaoControllerTest using Java 22.0.1 with PID 23168 (started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao)
+2024-06-06T23:11:24.899-03:00 DEBUG 23168 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-06T23:11:24.899-03:00  INFO 23168 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2024-06-06T23:11:26.764-03:00  INFO 23168 --- [desafioAPITransacao] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-06T23:11:26.765-03:00  INFO 23168 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-06T23:11:26.767-03:00  INFO 23168 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2024-06-06T23:11:26.810-03:00  INFO 23168 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Started TransacaoControllerTest in 2.288 seconds (process running for 3.192)
+2024-06-06T23:11:27.072-03:00  INFO 23168 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@9f9146d
+2024-06-06T23:28:54.451-03:00  INFO 19108 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Starting TransacaoControllerTest using Java 22.0.1 with PID 19108 (started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao)
+2024-06-06T23:28:54.451-03:00 DEBUG 19108 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-06T23:28:54.452-03:00  INFO 19108 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2024-06-06T23:28:56.424-03:00  INFO 19108 --- [desafioAPITransacao] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-06T23:28:56.424-03:00  INFO 19108 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-06T23:28:56.426-03:00  INFO 19108 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2024-06-06T23:28:56.466-03:00  INFO 19108 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Started TransacaoControllerTest in 2.409 seconds (process running for 3.179)
+2024-06-06T23:28:56.684-03:00  INFO 19108 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@6f867b0c
+2024-06-06T23:28:56.735-03:00  INFO 19108 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@690df641
+2024-06-06T23:28:56.737-03:00 ERROR 19108 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo.
+2024-06-06T23:31:55.528-03:00  INFO 8304 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Starting TransacaoControllerTest using Java 22.0.1 with PID 8304 (started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao)
+2024-06-06T23:31:55.528-03:00 DEBUG 8304 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-06T23:31:55.529-03:00  INFO 8304 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2024-06-06T23:31:57.420-03:00  INFO 8304 --- [desafioAPITransacao] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-06T23:31:57.421-03:00  INFO 8304 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-06T23:31:57.423-03:00  INFO 8304 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2024-06-06T23:31:57.457-03:00  INFO 8304 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Started TransacaoControllerTest in 2.317 seconds (process running for 3.116)
+2024-06-06T23:31:57.695-03:00  INFO 8304 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@1426370c
+2024-06-06T23:31:57.741-03:00  INFO 8304 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@1da75dde
+2024-06-06T23:31:57.743-03:00 ERROR 8304 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo e a data da transacao nao pode estar em um momento futuro.
+2024-06-06T23:31:57.750-03:00  INFO 8304 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@34ab26a
+2024-06-06T23:31:57.751-03:00 ERROR 8304 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A data da transacao nao pode estar em um momento futuro.
+2024-06-06T23:31:57.758-03:00  INFO 8304 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@5bb7a59
+2024-06-06T23:31:57.758-03:00 ERROR 8304 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo.
+2024-06-06T23:35:11.863-03:00  INFO 15844 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Starting TransacaoControllerTest using Java 22.0.1 with PID 15844 (started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao)
+2024-06-06T23:35:11.864-03:00 DEBUG 15844 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-06T23:35:11.865-03:00  INFO 15844 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2024-06-06T23:35:13.750-03:00  INFO 15844 --- [desafioAPITransacao] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-06T23:35:13.750-03:00  INFO 15844 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-06T23:35:13.752-03:00  INFO 15844 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2024-06-06T23:35:13.794-03:00  INFO 15844 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Started TransacaoControllerTest in 2.317 seconds (process running for 3.16)
+2024-06-06T23:35:14.053-03:00  INFO 15844 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@2aa6bbad
+2024-06-06T23:35:14.114-03:00  INFO 15844 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@d49e8c6
+2024-06-06T23:35:14.115-03:00 ERROR 15844 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo e a data da transacao nao pode estar em um momento futuro.
+2024-06-06T23:35:14.122-03:00  INFO 15844 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@3dfe92ef
+2024-06-06T23:35:14.123-03:00 ERROR 15844 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A data da transacao nao pode estar em um momento futuro.
+2024-06-06T23:35:14.130-03:00  INFO 15844 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@6f986501
+2024-06-06T23:35:14.130-03:00 ERROR 15844 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo.
+2024-06-06T23:37:25.545-03:00  INFO 23564 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Starting TransacaoControllerTest using Java 22.0.1 with PID 23564 (started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao)
+2024-06-06T23:37:25.545-03:00 DEBUG 23564 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-06T23:37:25.546-03:00  INFO 23564 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2024-06-06T23:37:27.377-03:00  INFO 23564 --- [desafioAPITransacao] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-06T23:37:27.377-03:00  INFO 23564 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-06T23:37:27.379-03:00  INFO 23564 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-06-06T23:37:27.415-03:00  INFO 23564 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Started TransacaoControllerTest in 2.251 seconds (process running for 3.026)
+2024-06-06T23:37:27.627-03:00  INFO 23564 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@6d0114c0
+2024-06-06T23:37:27.675-03:00  INFO 23564 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@54b44879
+2024-06-06T23:37:27.676-03:00 ERROR 23564 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo e a data da transacao nao pode estar em um momento futuro.
+2024-06-06T23:37:27.683-03:00  INFO 23564 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@44084713
+2024-06-06T23:37:27.684-03:00 ERROR 23564 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A data da transacao nao pode estar em um momento futuro.
+2024-06-06T23:37:27.691-03:00  INFO 23564 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@16c5b50a
+2024-06-06T23:37:27.691-03:00 ERROR 23564 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo.
+2024-06-06T23:38:18.470-03:00  INFO 17580 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Starting TransacaoControllerTest using Java 22.0.1 with PID 17580 (started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao)
+2024-06-06T23:38:18.471-03:00 DEBUG 17580 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-06T23:38:18.471-03:00  INFO 17580 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2024-06-06T23:38:20.369-03:00  INFO 17580 --- [desafioAPITransacao] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-06T23:38:20.369-03:00  INFO 17580 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-06T23:38:20.371-03:00  INFO 17580 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-06-06T23:38:20.412-03:00  INFO 17580 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Started TransacaoControllerTest in 2.335 seconds (process running for 3.125)
+2024-06-06T23:38:20.655-03:00  INFO 17580 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@6d815fb7
+2024-06-06T23:38:20.711-03:00  INFO 17580 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@1d3d76b4
+2024-06-06T23:38:20.712-03:00 ERROR 17580 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo e a data da transacao nao pode estar em um momento futuro.
+2024-06-06T23:38:20.720-03:00  INFO 17580 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@31c7c281
+2024-06-06T23:38:20.721-03:00 ERROR 17580 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A data da transacao nao pode estar em um momento futuro.
+2024-06-06T23:38:20.728-03:00  INFO 17580 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@5a39e554
+2024-06-06T23:38:20.728-03:00 ERROR 17580 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo.
+2024-06-06T23:38:20.735-03:00  INFO 17580 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@278fe428
+2024-06-06T23:38:20.735-03:00 ERROR 17580 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : payload errado.
+2024-06-06T23:55:48.274-03:00  INFO 24840 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Starting TransacaoControllerTest using Java 22.0.1 with PID 24840 (started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao)
+2024-06-06T23:55:48.275-03:00 DEBUG 24840 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-06T23:55:48.276-03:00  INFO 24840 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2024-06-06T23:55:50.181-03:00  INFO 24840 --- [desafioAPITransacao] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-06T23:55:50.181-03:00  INFO 24840 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-06T23:55:50.183-03:00  INFO 24840 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-06-06T23:55:50.218-03:00  INFO 24840 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Started TransacaoControllerTest in 2.351 seconds (process running for 3.158)
+2024-06-06T23:55:50.480-03:00  INFO 24840 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@21c75084
+2024-06-06T23:55:50.534-03:00  INFO 24840 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@2b9b17ce
+2024-06-06T23:55:50.535-03:00 ERROR 24840 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo e a data da transacao nao pode estar em um momento futuro.
+2024-06-06T23:55:50.543-03:00  INFO 24840 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@29c1249a
+2024-06-06T23:55:50.543-03:00 ERROR 24840 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A data da transacao nao pode estar em um momento futuro.
+2024-06-06T23:55:50.549-03:00  INFO 24840 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@4c5f7b4f
+2024-06-06T23:55:50.550-03:00 ERROR 24840 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo.
+2024-06-06T23:55:50.556-03:00  INFO 24840 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@350bbd5d
+2024-06-06T23:55:50.557-03:00 ERROR 24840 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : payload errado.
+2024-06-06T23:55:50.568-03:00  INFO 24840 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-06T23:58:18.493-03:00  INFO 23900 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Starting TransacaoControllerTest using Java 22.0.1 with PID 23900 (started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao)
+2024-06-06T23:58:18.494-03:00 DEBUG 23900 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-06T23:58:18.495-03:00  INFO 23900 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2024-06-06T23:58:20.354-03:00  INFO 23900 --- [desafioAPITransacao] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-06T23:58:20.355-03:00  INFO 23900 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-06T23:58:20.357-03:00  INFO 23900 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2024-06-06T23:58:20.400-03:00  INFO 23900 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Started TransacaoControllerTest in 2.29 seconds (process running for 3.084)
+2024-06-06T23:58:20.541-03:00  INFO 23900 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-06T23:58:20.693-03:00  INFO 23900 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@2ad2b274
+2024-06-06T23:58:20.709-03:00  INFO 23900 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@6326c5ec
+2024-06-06T23:58:20.710-03:00 ERROR 23900 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo e a data da transacao nao pode estar em um momento futuro.
+2024-06-06T23:58:20.717-03:00  INFO 23900 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@5731caaf
+2024-06-06T23:58:20.717-03:00 ERROR 23900 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A data da transacao nao pode estar em um momento futuro.
+2024-06-06T23:58:20.724-03:00  INFO 23900 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@4ad896f7
+2024-06-06T23:58:20.725-03:00 ERROR 23900 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo.
+2024-06-06T23:58:20.731-03:00  INFO 23900 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@3c488b34
+2024-06-06T23:58:20.732-03:00 ERROR 23900 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : payload errado.
+2024-06-06T23:58:20.738-03:00  INFO 23900 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T00:00:03.312-03:00  INFO 10008 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Starting TransacaoControllerTest using Java 22.0.1 with PID 10008 (started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao)
+2024-06-07T00:00:03.323-03:00 DEBUG 10008 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-07T00:00:03.324-03:00  INFO 10008 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2024-06-07T00:00:05.187-03:00  INFO 10008 --- [desafioAPITransacao] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-07T00:00:05.188-03:00  INFO 10008 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-07T00:00:05.190-03:00  INFO 10008 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-06-07T00:00:05.232-03:00  INFO 10008 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Started TransacaoControllerTest in 2.317 seconds (process running for 3.258)
+2024-06-07T00:00:05.363-03:00  INFO 10008 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T00:00:05.368-03:00 ERROR 10008 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A lista esta vazia
+2024-06-07T00:00:05.553-03:00  INFO 10008 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@4b691611
+2024-06-07T00:00:05.566-03:00  INFO 10008 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@ec5f944
+2024-06-07T00:00:05.566-03:00 ERROR 10008 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo e a data da transacao nao pode estar em um momento futuro.
+2024-06-07T00:00:05.573-03:00  INFO 10008 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@bfe47a8
+2024-06-07T00:00:05.574-03:00 ERROR 10008 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A data da transacao nao pode estar em um momento futuro.
+2024-06-07T00:00:05.581-03:00  INFO 10008 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@74d22ddd
+2024-06-07T00:00:05.581-03:00 ERROR 10008 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo.
+2024-06-07T00:00:05.588-03:00  INFO 10008 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@844e66d
+2024-06-07T00:00:05.588-03:00 ERROR 10008 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : payload errado.
+2024-06-07T00:00:05.597-03:00  INFO 10008 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T00:34:21.684-03:00  INFO 24816 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Starting TransacaoControllerTest using Java 22.0.1 with PID 24816 (started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao)
+2024-06-07T00:34:21.685-03:00 DEBUG 24816 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-07T00:34:21.686-03:00  INFO 24816 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2024-06-07T00:34:23.564-03:00  INFO 24816 --- [desafioAPITransacao] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-07T00:34:23.564-03:00  INFO 24816 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-07T00:34:23.565-03:00  INFO 24816 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-06-07T00:34:23.603-03:00  INFO 24816 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Started TransacaoControllerTest in 2.306 seconds (process running for 3.083)
+2024-06-07T00:34:23.729-03:00  INFO 24816 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T00:34:23.733-03:00 ERROR 24816 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A lista esta vazia
+2024-06-07T00:34:23.877-03:00  INFO 24816 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@31c7c281
+2024-06-07T00:34:23.893-03:00  INFO 24816 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:34:23.896-03:00  INFO 24816 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 1.5326 milisegundos
+2024-06-07T00:34:23.896-03:00  INFO 24816 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:34:23.909-03:00  INFO 24816 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@7ab33ca8
+2024-06-07T00:34:23.909-03:00 ERROR 24816 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo e a data da transacao nao pode estar em um momento futuro.
+2024-06-07T00:34:23.916-03:00  INFO 24816 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@138a85d3
+2024-06-07T00:34:23.917-03:00 ERROR 24816 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A data da transacao nao pode estar em um momento futuro.
+2024-06-07T00:34:23.923-03:00  INFO 24816 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@59933644
+2024-06-07T00:34:23.923-03:00 ERROR 24816 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo.
+2024-06-07T00:34:23.929-03:00  INFO 24816 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@c318864
+2024-06-07T00:34:23.930-03:00 ERROR 24816 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : payload errado.
+2024-06-07T00:34:23.936-03:00  INFO 24816 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T00:36:10.178-03:00  INFO 7144 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Starting TransacaoControllerTest using Java 22.0.1 with PID 7144 (started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao)
+2024-06-07T00:36:10.179-03:00 DEBUG 7144 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-07T00:36:10.180-03:00  INFO 7144 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2024-06-07T00:36:12.091-03:00  INFO 7144 --- [desafioAPITransacao] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-07T00:36:12.092-03:00  INFO 7144 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-07T00:36:12.094-03:00  INFO 7144 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2024-06-07T00:36:12.134-03:00  INFO 7144 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Started TransacaoControllerTest in 2.338 seconds (process running for 3.11)
+2024-06-07T00:36:12.288-03:00  INFO 7144 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T00:36:12.291-03:00 ERROR 7144 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A lista esta vazia
+2024-06-07T00:36:12.439-03:00  INFO 7144 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@5a39e554
+2024-06-07T00:36:12.451-03:00  INFO 7144 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@73b74615
+2024-06-07T00:36:12.451-03:00 ERROR 7144 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo e a data da transacao nao pode estar em um momento futuro.
+2024-06-07T00:36:12.458-03:00  INFO 7144 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@320ff86f
+2024-06-07T00:36:12.458-03:00 ERROR 7144 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A data da transacao nao pode estar em um momento futuro.
+2024-06-07T00:36:12.470-03:00  INFO 7144 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:36:12.471-03:00  INFO 7144 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 0.5884 milisegundos
+2024-06-07T00:36:12.471-03:00  INFO 7144 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:36:12.495-03:00  INFO 7144 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@43786627
+2024-06-07T00:36:12.495-03:00 ERROR 7144 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo.
+2024-06-07T00:36:12.500-03:00  INFO 7144 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:36:12.501-03:00  INFO 7144 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 0.8195 milisegundos
+2024-06-07T00:36:12.501-03:00  INFO 7144 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:36:12.511-03:00  INFO 7144 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@145e958f
+2024-06-07T00:36:12.511-03:00 ERROR 7144 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : payload errado.
+2024-06-07T00:36:12.517-03:00  INFO 7144 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T00:39:12.513-03:00  INFO 20000 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Starting TransacaoControllerTest using Java 22.0.1 with PID 20000 (started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao)
+2024-06-07T00:39:12.514-03:00 DEBUG 20000 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-07T00:39:12.515-03:00  INFO 20000 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2024-06-07T00:39:14.398-03:00  INFO 20000 --- [desafioAPITransacao] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-07T00:39:14.399-03:00  INFO 20000 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-07T00:39:14.401-03:00  INFO 20000 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2024-06-07T00:39:14.443-03:00  INFO 20000 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Started TransacaoControllerTest in 2.311 seconds (process running for 3.112)
+2024-06-07T00:39:14.569-03:00  INFO 20000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T00:39:14.572-03:00 ERROR 20000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A lista esta vazia
+2024-06-07T00:39:14.722-03:00  INFO 20000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@5a39e554
+2024-06-07T00:39:14.734-03:00  INFO 20000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@73b74615
+2024-06-07T00:39:14.735-03:00 ERROR 20000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo e a data da transacao nao pode estar em um momento futuro.
+2024-06-07T00:39:14.741-03:00  INFO 20000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@320ff86f
+2024-06-07T00:39:14.742-03:00 ERROR 20000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A data da transacao nao pode estar em um momento futuro.
+2024-06-07T00:39:14.754-03:00  INFO 20000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:39:14.755-03:00  INFO 20000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 0.8359 milisegundos
+2024-06-07T00:39:14.756-03:00  INFO 20000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:39:14.767-03:00  INFO 20000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@59933644
+2024-06-07T00:39:14.767-03:00 ERROR 20000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo.
+2024-06-07T00:39:14.773-03:00  INFO 20000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:39:14.773-03:00  INFO 20000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 0.6274 milisegundos
+2024-06-07T00:39:14.773-03:00  INFO 20000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:39:14.780-03:00  INFO 20000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@5aab5b31
+2024-06-07T00:39:14.781-03:00 ERROR 20000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : payload errado.
+2024-06-07T00:39:14.787-03:00  INFO 20000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T00:50:54.154-03:00  INFO 10000 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Starting TransacaoControllerTest using Java 22.0.1 with PID 10000 (started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao)
+2024-06-07T00:50:54.155-03:00 DEBUG 10000 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-07T00:50:54.156-03:00  INFO 10000 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2024-06-07T00:50:56.019-03:00  INFO 10000 --- [desafioAPITransacao] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-07T00:50:56.019-03:00  INFO 10000 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-07T00:50:56.021-03:00  INFO 10000 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2024-06-07T00:50:56.064-03:00  INFO 10000 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Started TransacaoControllerTest in 2.312 seconds (process running for 3.102)
+2024-06-07T00:50:56.216-03:00  INFO 10000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T00:50:56.220-03:00 ERROR 10000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A lista esta vazia
+2024-06-07T00:50:56.371-03:00  INFO 10000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@16c5b50a
+2024-06-07T00:50:56.386-03:00  INFO 10000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:50:56.389-03:00 ERROR 10000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A lista de transacoes esta vazia
+2024-06-07T00:50:56.410-03:00  INFO 10000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@5b3518e1
+2024-06-07T00:50:56.411-03:00 ERROR 10000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo e a data da transacao nao pode estar em um momento futuro.
+2024-06-07T00:50:56.417-03:00  INFO 10000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@26a45089
+2024-06-07T00:50:56.418-03:00 ERROR 10000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A data da transacao nao pode estar em um momento futuro.
+2024-06-07T00:50:56.426-03:00  INFO 10000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:50:56.428-03:00  INFO 10000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 0.7621 milisegundos
+2024-06-07T00:50:56.428-03:00  INFO 10000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:50:56.439-03:00  INFO 10000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@34549979
+2024-06-07T00:50:56.440-03:00 ERROR 10000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo.
+2024-06-07T00:50:56.445-03:00  INFO 10000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:50:56.445-03:00  INFO 10000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 0.1249 milisegundos
+2024-06-07T00:50:56.445-03:00  INFO 10000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:50:56.452-03:00  INFO 10000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@56b9d43f
+2024-06-07T00:50:56.452-03:00 ERROR 10000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : payload errado.
+2024-06-07T00:50:56.457-03:00  INFO 10000 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T00:51:32.583-03:00  INFO 5180 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Starting TransacaoControllerTest using Java 22.0.1 with PID 5180 (started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao)
+2024-06-07T00:51:32.584-03:00 DEBUG 5180 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-07T00:51:32.585-03:00  INFO 5180 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2024-06-07T00:51:34.482-03:00  INFO 5180 --- [desafioAPITransacao] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-07T00:51:34.483-03:00  INFO 5180 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-07T00:51:34.484-03:00  INFO 5180 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-06-07T00:51:34.526-03:00  INFO 5180 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Started TransacaoControllerTest in 2.323 seconds (process running for 3.107)
+2024-06-07T00:51:34.662-03:00  INFO 5180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T00:51:34.665-03:00 ERROR 5180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A lista esta vazia
+2024-06-07T00:51:34.805-03:00  INFO 5180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@6d8b7ea9
+2024-06-07T00:51:34.818-03:00  INFO 5180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:51:34.820-03:00 ERROR 5180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A lista de transacoes esta vazia
+2024-06-07T00:51:34.828-03:00  INFO 5180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@53ba1175
+2024-06-07T00:51:34.829-03:00 ERROR 5180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo e a data da transacao nao pode estar em um momento futuro.
+2024-06-07T00:51:34.835-03:00  INFO 5180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@4fe2dd02
+2024-06-07T00:51:34.836-03:00 ERROR 5180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A data da transacao nao pode estar em um momento futuro.
+2024-06-07T00:51:34.845-03:00  INFO 5180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:51:34.846-03:00  INFO 5180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 0.6699 milisegundos
+2024-06-07T00:51:34.846-03:00  INFO 5180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:51:34.856-03:00  INFO 5180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@4beae1e3
+2024-06-07T00:51:34.857-03:00 ERROR 5180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo.
+2024-06-07T00:51:34.862-03:00  INFO 5180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:51:34.862-03:00  INFO 5180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 0.1834 milisegundos
+2024-06-07T00:51:34.862-03:00  INFO 5180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:51:34.868-03:00  INFO 5180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@655621fd
+2024-06-07T00:51:34.869-03:00 ERROR 5180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : payload errado.
+2024-06-07T00:51:34.874-03:00  INFO 5180 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T00:54:10.237-03:00  INFO 316 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Starting TransacaoControllerTest using Java 22.0.1 with PID 316 (started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao)
+2024-06-07T00:54:10.238-03:00 DEBUG 316 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-07T00:54:10.238-03:00  INFO 316 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2024-06-07T00:54:12.155-03:00  INFO 316 --- [desafioAPITransacao] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-07T00:54:12.156-03:00  INFO 316 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-07T00:54:12.157-03:00  INFO 316 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-06-07T00:54:12.201-03:00  INFO 316 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Started TransacaoControllerTest in 2.348 seconds (process running for 3.132)
+2024-06-07T00:54:12.355-03:00  INFO 316 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T00:54:12.360-03:00 ERROR 316 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A lista esta vazia
+2024-06-07T00:54:12.523-03:00  INFO 316 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@16c5b50a
+2024-06-07T00:54:12.536-03:00  INFO 316 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:54:12.537-03:00 ERROR 316 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A lista de transacoes esta vazia
+2024-06-07T00:54:12.545-03:00  INFO 316 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:54:12.545-03:00 ERROR 316 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Nao ha registro de transacoes para o intervalo de tempo escolhido
+2024-06-07T00:54:12.552-03:00  INFO 316 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@726a8729
+2024-06-07T00:54:12.552-03:00 ERROR 316 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo e a data da transacao nao pode estar em um momento futuro.
+2024-06-07T00:54:12.559-03:00  INFO 316 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@2c6927f0
+2024-06-07T00:54:12.559-03:00 ERROR 316 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A data da transacao nao pode estar em um momento futuro.
+2024-06-07T00:54:12.567-03:00  INFO 316 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:54:12.569-03:00  INFO 316 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 0.7361 milisegundos
+2024-06-07T00:54:12.569-03:00  INFO 316 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:54:12.578-03:00  INFO 316 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@655621fd
+2024-06-07T00:54:12.579-03:00 ERROR 316 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo.
+2024-06-07T00:54:12.584-03:00  INFO 316 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:54:12.584-03:00  INFO 316 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 0.1591 milisegundos
+2024-06-07T00:54:12.584-03:00  INFO 316 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:54:12.590-03:00  INFO 316 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@6d420cdd
+2024-06-07T00:54:12.590-03:00 ERROR 316 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : payload errado.
+2024-06-07T00:54:12.596-03:00  INFO 316 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T00:55:43.271-03:00  INFO 2956 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Starting TransacaoControllerTest using Java 22.0.1 with PID 2956 (started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao)
+2024-06-07T00:55:43.272-03:00 DEBUG 2956 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-07T00:55:43.273-03:00  INFO 2956 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2024-06-07T00:55:45.185-03:00  INFO 2956 --- [desafioAPITransacao] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-07T00:55:45.186-03:00  INFO 2956 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-07T00:55:45.188-03:00  INFO 2956 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2024-06-07T00:55:45.229-03:00  INFO 2956 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Started TransacaoControllerTest in 2.386 seconds (process running for 3.181)
+2024-06-07T00:55:45.393-03:00  INFO 2956 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T00:55:45.398-03:00 ERROR 2956 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A lista esta vazia
+2024-06-07T00:55:45.567-03:00  INFO 2956 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@22ca1242
+2024-06-07T00:55:45.580-03:00  INFO 2956 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:55:45.581-03:00 ERROR 2956 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Nao ha registro de transacoes para o intervalo de tempo escolhido
+2024-06-07T00:55:45.589-03:00  INFO 2956 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:55:45.590-03:00 ERROR 2956 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A lista de transacoes esta vazia
+2024-06-07T00:55:45.596-03:00  INFO 2956 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:55:45.597-03:00 ERROR 2956 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Nao ha registro de transacoes para o intervalo de tempo escolhido
+2024-06-07T00:55:45.603-03:00  INFO 2956 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@374b6e33
+2024-06-07T00:55:45.603-03:00 ERROR 2956 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo e a data da transacao nao pode estar em um momento futuro.
+2024-06-07T00:55:45.609-03:00  INFO 2956 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@1584c019
+2024-06-07T00:55:45.610-03:00 ERROR 2956 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A data da transacao nao pode estar em um momento futuro.
+2024-06-07T00:55:45.619-03:00  INFO 2956 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:55:45.620-03:00  INFO 2956 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 0.6877 milisegundos
+2024-06-07T00:55:45.620-03:00  INFO 2956 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:55:45.630-03:00  INFO 2956 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@45796b2a
+2024-06-07T00:55:45.630-03:00 ERROR 2956 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo.
+2024-06-07T00:55:45.635-03:00  INFO 2956 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:55:45.635-03:00  INFO 2956 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 0.1315 milisegundos
+2024-06-07T00:55:45.635-03:00  INFO 2956 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T00:55:45.641-03:00  INFO 2956 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@eded048
+2024-06-07T00:55:45.641-03:00 ERROR 2956 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : payload errado.
+2024-06-07T00:55:45.647-03:00  INFO 2956 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T01:04:39.107-03:00  INFO 25300 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Starting TransacaoControllerTest using Java 22.0.1 with PID 25300 (started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao)
+2024-06-07T01:04:39.108-03:00 DEBUG 25300 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-07T01:04:39.108-03:00  INFO 25300 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2024-06-07T01:04:41.035-03:00  INFO 25300 --- [desafioAPITransacao] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-07T01:04:41.036-03:00  INFO 25300 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-07T01:04:41.037-03:00  INFO 25300 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-06-07T01:04:41.086-03:00  INFO 25300 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Started TransacaoControllerTest in 2.377 seconds (process running for 3.204)
+2024-06-07T01:04:41.248-03:00  INFO 25300 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T01:04:41.252-03:00 ERROR 25300 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A lista esta vazia
+2024-06-07T01:04:41.414-03:00  INFO 25300 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@16c5b50a
+2024-06-07T01:04:41.428-03:00  INFO 25300 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Removendo todas as transacoes.
+2024-06-07T01:04:41.436-03:00  INFO 25300 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:04:41.437-03:00 ERROR 25300 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Nao ha registro de transacoes para o intervalo de tempo escolhido
+2024-06-07T01:04:41.444-03:00  INFO 25300 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:04:41.445-03:00 ERROR 25300 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A lista de transacoes esta vazia
+2024-06-07T01:04:41.451-03:00  INFO 25300 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:04:41.451-03:00 ERROR 25300 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Nao ha registro de transacoes para o intervalo de tempo escolhido
+2024-06-07T01:04:41.458-03:00  INFO 25300 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@4ad896f7
+2024-06-07T01:04:41.458-03:00 ERROR 25300 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo e a data da transacao nao pode estar em um momento futuro.
+2024-06-07T01:04:41.464-03:00  INFO 25300 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@3c488b34
+2024-06-07T01:04:41.465-03:00 ERROR 25300 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A data da transacao nao pode estar em um momento futuro.
+2024-06-07T01:04:41.471-03:00  INFO 25300 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:04:41.472-03:00  INFO 25300 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 0.6214 milisegundos
+2024-06-07T01:04:41.472-03:00  INFO 25300 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:04:41.481-03:00  INFO 25300 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@6c27e700
+2024-06-07T01:04:41.481-03:00 ERROR 25300 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo.
+2024-06-07T01:04:41.486-03:00  INFO 25300 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:04:41.487-03:00  INFO 25300 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 0.2137 milisegundos
+2024-06-07T01:04:41.487-03:00  INFO 25300 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:04:41.493-03:00  INFO 25300 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@1209a0f
+2024-06-07T01:04:41.493-03:00 ERROR 25300 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : payload errado.
+2024-06-07T01:04:41.500-03:00  INFO 25300 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T01:08:00.121-03:00  INFO 20148 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Starting TransacaoControllerTest using Java 22.0.1 with PID 20148 (started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao)
+2024-06-07T01:08:00.122-03:00 DEBUG 20148 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-07T01:08:00.124-03:00  INFO 20148 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2024-06-07T01:08:02.021-03:00  INFO 20148 --- [desafioAPITransacao] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-07T01:08:02.022-03:00  INFO 20148 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-07T01:08:02.024-03:00  INFO 20148 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-06-07T01:08:02.063-03:00  INFO 20148 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Started TransacaoControllerTest in 2.347 seconds (process running for 3.14)
+2024-06-07T01:08:02.229-03:00  INFO 20148 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T01:08:02.234-03:00 ERROR 20148 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A lista esta vazia
+2024-06-07T01:08:02.410-03:00  INFO 20148 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@20820df0
+2024-06-07T01:08:02.423-03:00  INFO 20148 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Removendo todas as transacoes.
+2024-06-07T01:08:02.431-03:00  INFO 20148 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:08:02.432-03:00 ERROR 20148 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Nao ha registro de transacoes para o intervalo de tempo escolhido
+2024-06-07T01:08:02.439-03:00  INFO 20148 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:08:02.440-03:00 ERROR 20148 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A lista de transacoes esta vazia
+2024-06-07T01:08:02.445-03:00  INFO 20148 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:08:02.446-03:00 ERROR 20148 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Nao ha registro de transacoes para o intervalo de tempo escolhido
+2024-06-07T01:08:02.452-03:00  INFO 20148 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@5408d4b3
+2024-06-07T01:08:02.453-03:00 ERROR 20148 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo e a data da transacao nao pode estar em um momento futuro.
+2024-06-07T01:08:02.459-03:00  INFO 20148 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@4e4d0a0b
+2024-06-07T01:08:02.459-03:00 ERROR 20148 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A data da transacao nao pode estar em um momento futuro.
+2024-06-07T01:08:02.465-03:00  INFO 20148 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:08:02.466-03:00  INFO 20148 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 0.6406 milisegundos
+2024-06-07T01:08:02.466-03:00  INFO 20148 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:08:02.476-03:00  INFO 20148 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@66715ca9
+2024-06-07T01:08:02.476-03:00 ERROR 20148 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo.
+2024-06-07T01:08:02.481-03:00  INFO 20148 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:08:02.481-03:00  INFO 20148 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 0.1897 milisegundos
+2024-06-07T01:08:02.481-03:00  INFO 20148 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:08:02.486-03:00  INFO 20148 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Removendo todas as transacoes.
+2024-06-07T01:08:02.486-03:00 ERROR 20148 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Houve algum problema ao tentar apagar os itens da lista.
+2024-06-07T01:08:02.492-03:00  INFO 20148 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@25fd6d1e
+2024-06-07T01:08:02.492-03:00 ERROR 20148 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : payload errado.
+2024-06-07T01:08:02.498-03:00  INFO 20148 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T01:09:15.534-03:00  INFO 7560 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Starting TransacaoControllerTest using Java 22.0.1 with PID 7560 (started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao)
+2024-06-07T01:09:15.535-03:00 DEBUG 7560 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-07T01:09:15.536-03:00  INFO 7560 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2024-06-07T01:09:17.135-03:00  INFO 7560 --- [desafioAPITransacao] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-07T01:09:17.136-03:00  INFO 7560 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-07T01:09:17.137-03:00  INFO 7560 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-06-07T01:09:17.170-03:00  INFO 7560 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Started TransacaoControllerTest in 1.999 seconds (process running for 2.929)
+2024-06-07T01:09:17.287-03:00  INFO 7560 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T01:09:17.290-03:00 ERROR 7560 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A lista esta vazia
+2024-06-07T01:09:17.432-03:00  INFO 7560 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@785a4557
+2024-06-07T01:09:17.445-03:00  INFO 7560 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Removendo todas as transacoes.
+2024-06-07T01:09:17.453-03:00  INFO 7560 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:09:17.454-03:00 ERROR 7560 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Nao ha registro de transacoes para o intervalo de tempo escolhido
+2024-06-07T01:09:17.461-03:00  INFO 7560 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:09:17.462-03:00 ERROR 7560 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A lista de transacoes esta vazia
+2024-06-07T01:09:17.467-03:00  INFO 7560 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:09:17.467-03:00 ERROR 7560 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Nao ha registro de transacoes para o intervalo de tempo escolhido
+2024-06-07T01:09:17.473-03:00  INFO 7560 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@4a04ca74
+2024-06-07T01:09:17.474-03:00 ERROR 7560 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo e a data da transacao nao pode estar em um momento futuro.
+2024-06-07T01:09:17.479-03:00  INFO 7560 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@6ace919c
+2024-06-07T01:09:17.479-03:00 ERROR 7560 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A data da transacao nao pode estar em um momento futuro.
+2024-06-07T01:09:17.485-03:00  INFO 7560 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:09:17.486-03:00  INFO 7560 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 0.6246 milisegundos
+2024-06-07T01:09:17.486-03:00  INFO 7560 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:09:17.495-03:00  INFO 7560 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@1a84a8b2
+2024-06-07T01:09:17.495-03:00 ERROR 7560 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo.
+2024-06-07T01:09:17.500-03:00  INFO 7560 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:09:17.500-03:00  INFO 7560 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 0.1455 milisegundos
+2024-06-07T01:09:17.500-03:00  INFO 7560 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:09:17.505-03:00  INFO 7560 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Removendo todas as transacoes.
+2024-06-07T01:09:17.505-03:00 ERROR 7560 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Houve algum problema ao tentar apagar os itens da lista.
+2024-06-07T01:09:17.511-03:00  INFO 7560 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@12448de1
+2024-06-07T01:09:17.512-03:00 ERROR 7560 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : payload errado.
+2024-06-07T01:09:17.519-03:00  INFO 7560 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T01:11:28.500-03:00  INFO 15700 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Starting TransacaoControllerTest using Java 22.0.1 with PID 15700 (started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao)
+2024-06-07T01:11:28.501-03:00 DEBUG 15700 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-07T01:11:28.501-03:00  INFO 15700 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2024-06-07T01:11:30.068-03:00  INFO 15700 --- [desafioAPITransacao] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-07T01:11:30.069-03:00  INFO 15700 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-07T01:11:30.070-03:00  INFO 15700 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-06-07T01:11:30.106-03:00  INFO 15700 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Started TransacaoControllerTest in 1.973 seconds (process running for 2.856)
+2024-06-07T01:11:30.220-03:00  INFO 15700 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T01:11:30.223-03:00 ERROR 15700 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A lista esta vazia
+2024-06-07T01:11:30.368-03:00  INFO 15700 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@59fea5f5
+2024-06-07T01:11:30.381-03:00  INFO 15700 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Removendo todas as transacoes.
+2024-06-07T01:11:30.389-03:00  INFO 15700 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:11:30.390-03:00 ERROR 15700 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Nao ha registro de transacoes para o intervalo de tempo escolhido
+2024-06-07T01:11:30.397-03:00  INFO 15700 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:11:30.398-03:00 ERROR 15700 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A lista de transacoes esta vazia
+2024-06-07T01:11:30.403-03:00  INFO 15700 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:11:30.403-03:00 ERROR 15700 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Nao ha registro de transacoes para o intervalo de tempo escolhido
+2024-06-07T01:11:30.409-03:00  INFO 15700 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@71ad959b
+2024-06-07T01:11:30.410-03:00 ERROR 15700 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo e a data da transacao nao pode estar em um momento futuro.
+2024-06-07T01:11:30.416-03:00  INFO 15700 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@18b40fe6
+2024-06-07T01:11:30.416-03:00 ERROR 15700 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A data da transacao nao pode estar em um momento futuro.
+2024-06-07T01:11:30.422-03:00  INFO 15700 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:11:30.423-03:00  INFO 15700 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 0.6104 milisegundos
+2024-06-07T01:11:30.423-03:00  INFO 15700 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:11:30.432-03:00  INFO 15700 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@1f71e024
+2024-06-07T01:11:30.433-03:00 ERROR 15700 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo.
+2024-06-07T01:11:30.438-03:00  INFO 15700 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:11:30.438-03:00  INFO 15700 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 0.1841 milisegundos
+2024-06-07T01:11:30.438-03:00  INFO 15700 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:11:30.443-03:00  INFO 15700 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Removendo todas as transacoes.
+2024-06-07T01:11:30.444-03:00 ERROR 15700 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Houve algum problema ao tentar apagar os itens da lista.
+2024-06-07T01:11:30.450-03:00  INFO 15700 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@52d9d817
+2024-06-07T01:11:30.451-03:00 ERROR 15700 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : payload errado.
+2024-06-07T01:11:30.458-03:00  INFO 15700 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T01:12:14.397-03:00  INFO 7276 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Starting TransacaoControllerTest using Java 22.0.1 with PID 7276 (started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao)
+2024-06-07T01:12:14.397-03:00 DEBUG 7276 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-07T01:12:14.398-03:00  INFO 7276 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2024-06-07T01:12:15.988-03:00  INFO 7276 --- [desafioAPITransacao] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-07T01:12:15.988-03:00  INFO 7276 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-07T01:12:15.989-03:00  INFO 7276 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-06-07T01:12:16.017-03:00  INFO 7276 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Started TransacaoControllerTest in 1.977 seconds (process running for 2.846)
+2024-06-07T01:12:16.134-03:00  INFO 7276 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-07T01:12:16.138-03:00 ERROR 7276 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A lista esta vazia
+2024-06-07T01:12:16.281-03:00  INFO 7276 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@782cc5fa
+2024-06-07T01:12:16.297-03:00  INFO 7276 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Removendo todas as transacoes.
+2024-06-07T01:12:16.305-03:00  INFO 7276 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:12:16.306-03:00 ERROR 7276 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Nao ha registro de transacoes para o intervalo de tempo escolhido
+2024-06-07T01:12:16.313-03:00  INFO 7276 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:12:16.313-03:00 ERROR 7276 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A lista de transacoes esta vazia
+2024-06-07T01:12:16.318-03:00  INFO 7276 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:12:16.319-03:00 ERROR 7276 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Nao ha registro de transacoes para o intervalo de tempo escolhido
+2024-06-07T01:12:16.326-03:00  INFO 7276 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@8851ec
+2024-06-07T01:12:16.326-03:00 ERROR 7276 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo e a data da transacao nao pode estar em um momento futuro.
+2024-06-07T01:12:16.331-03:00  INFO 7276 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@2913ca3e
+2024-06-07T01:12:16.332-03:00 ERROR 7276 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A data da transacao nao pode estar em um momento futuro.
+2024-06-07T01:12:16.337-03:00  INFO 7276 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:12:16.338-03:00  INFO 7276 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 0.6568 milisegundos
+2024-06-07T01:12:16.338-03:00  INFO 7276 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:12:16.347-03:00  INFO 7276 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@34beadce
+2024-06-07T01:12:16.348-03:00 ERROR 7276 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo.
+2024-06-07T01:12:16.353-03:00  INFO 7276 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:12:16.353-03:00  INFO 7276 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 0.1776 milisegundos
+2024-06-07T01:12:16.354-03:00  INFO 7276 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-07T01:12:16.358-03:00  INFO 7276 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Removendo todas as transacoes.
+2024-06-07T01:12:16.359-03:00 ERROR 7276 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Houve algum problema ao tentar apagar os itens da lista.
+2024-06-07T01:12:16.365-03:00  INFO 7276 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@485451d8
+2024-06-07T01:12:16.365-03:00 ERROR 7276 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : payload errado.
+2024-06-07T01:12:16.372-03:00  INFO 7276 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
