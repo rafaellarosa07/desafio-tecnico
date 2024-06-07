@@ -18,6 +18,10 @@ public class EstatisticaController {
     private final Integer intervaloMaximoEmSegundos = 60;
     private TransacaoRepository transacaoRepository;
 
+    public EstatisticaController(TransacaoRepository transacaoRepository) {
+        this.transacaoRepository = transacaoRepository;
+    }
+
     @GetMapping
     public ResponseEntity estatistica() {
         log.info("Calcular as estatísticas");
