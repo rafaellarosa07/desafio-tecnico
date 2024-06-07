@@ -21,7 +21,7 @@ public class EstatisticaDto {
         this.count = doubleSummaryStatistics.getCount();
         this.sum = doubleSummaryStatistics.getSum();
         this.avg = doubleSummaryStatistics.getAverage();
-        this.min = Math.min(0, doubleSummaryStatistics.getMin());
-        this.max = Math.max(0, doubleSummaryStatistics.getMax());
+        this.min = Math.min(0, doubleSummaryStatistics.getMin() == Double.POSITIVE_INFINITY ? 0 : doubleSummaryStatistics.getMin());
+        this.max = Math.max(0, doubleSummaryStatistics.getMax() == Double.NEGATIVE_INFINITY ? 0 : doubleSummaryStatistics.getMax());
     }
 }
