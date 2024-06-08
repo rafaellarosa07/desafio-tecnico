@@ -11,9 +11,26 @@ import java.time.OffsetDateTime;
 @RequestMapping("/transacao")
 public class TransacaoController {
 
-    private final TransacaoService transacaoService;
+    private final TransacaoService transacaoOperations;
 
-    public TransacaoController(TransacaoService transacaoService) {
-        this.transacaoService = transacaoService;
+    public TransacaoController(TransacaoService transacaoOperations) {
+        this.transacaoOperations = transacaoOperations;
+    }
+
+    @PostMapping
+    public ResponseEntity<Void> postTransacao(@RequestBody Transacao transacao) {
+        if (transacao.getValor() < 0 || transacao.getDataHora().isAfter(OffsetDateTime.now())) {
+            return ResponseEntity.status(HttpStatus.UNPROCESSABLE_ENTITY).build();
+        }
+        transacaoOperations.addTransacao(transacao);
+        return ResponseEntity.status(HttpStatus.CREATED).build();
+    }
+
+    @DeleteMapping
+    public ResponseEntity<Void> deleteTransacoes() {
+        transacaoOperations.cleanerTransacoes();
+        return ResponseEntity.ok().build();
     }
 }
+
+
