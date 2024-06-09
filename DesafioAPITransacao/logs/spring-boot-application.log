@@ -580,3 +580,44 @@ Caused by: java.lang.ClassNotFoundException: io.swagger.v3.oas.models.OpenAPI
 2024-06-09T14:49:03.614-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.service.TransacaoService           : Nao foi possivel retornar transacoes, a lista esta vazia.
 2024-06-09T14:49:03.617-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.service.TransacaoService           : Retornando lista de transacoes
 2024-06-09T14:49:03.619-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.service.TransacaoService           : O valor da transacao nao pode ser negativo e a data da transacao nao pode estar em um momento futuro.
+2024-06-09T15:18:54.290-03:00  INFO 37624 --- [desafioAPITransacao] [main] .e.d.DesafioApiTransacaoApplicationTests : Starting DesafioApiTransacaoApplicationTests using Java 22.0.1 with PID 37624 (started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao)
+2024-06-09T15:18:54.291-03:00 DEBUG 37624 --- [desafioAPITransacao] [main] .e.d.DesafioApiTransacaoApplicationTests : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-09T15:18:54.292-03:00  INFO 37624 --- [desafioAPITransacao] [main] .e.d.DesafioApiTransacaoApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-06-09T15:18:56.551-03:00  INFO 37624 --- [desafioAPITransacao] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2024-06-09T15:18:56.609-03:00  INFO 37624 --- [desafioAPITransacao] [main] .e.d.DesafioApiTransacaoApplicationTests : Started DesafioApiTransacaoApplicationTests in 2.845 seconds (process running for 6.296)
+2024-06-09T15:18:56.727-03:00  INFO 37624 --- [desafioAPITransacao] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.example.desafioapitransacao.controller.TransacaoControllerTest]: TransacaoControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-06-09T15:18:56.753-03:00  INFO 37624 --- [desafioAPITransacao] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.example.desafioapitransacao.DesafioApiTransacaoApplication for test class org.example.desafioapitransacao.controller.TransacaoControllerTest
+2024-06-09T15:18:56.790-03:00  INFO 37624 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Starting TransacaoControllerTest using Java 22.0.1 with PID 37624 (started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao)
+2024-06-09T15:18:56.791-03:00 DEBUG 37624 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-09T15:18:56.791-03:00  INFO 37624 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2024-06-09T15:18:57.048-03:00  INFO 37624 --- [desafioAPITransacao] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-09T15:18:57.049-03:00  INFO 37624 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-09T15:18:57.049-03:00  INFO 37624 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-06-09T15:18:57.056-03:00  INFO 37624 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Started TransacaoControllerTest in 0.299 seconds (process running for 6.744)
+2024-06-09T15:18:57.144-03:00  INFO 37624 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-09T15:18:57.145-03:00 ERROR 37624 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A lista esta vazia
+2024-06-09T15:18:57.378-03:00  INFO 37624 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@49f7bf63
+2024-06-09T15:18:57.389-03:00  INFO 37624 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Removendo todas as transacoes.
+2024-06-09T15:18:57.397-03:00  INFO 37624 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-09T15:18:57.397-03:00 ERROR 37624 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Nao ha registro de transacoes para o intervalo de tempo escolhido
+2024-06-09T15:18:57.405-03:00  INFO 37624 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-09T15:18:57.405-03:00 ERROR 37624 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A lista de transacoes esta vazia
+2024-06-09T15:18:57.411-03:00  INFO 37624 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-09T15:18:57.411-03:00 ERROR 37624 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Nao ha registro de transacoes para o intervalo de tempo escolhido
+2024-06-09T15:18:57.419-03:00  INFO 37624 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@45923ee
+2024-06-09T15:18:57.420-03:00 ERROR 37624 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo e a data da transacao nao pode estar em um momento futuro.
+2024-06-09T15:18:57.427-03:00  INFO 37624 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@37ae5890
+2024-06-09T15:18:57.428-03:00 ERROR 37624 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A data da transacao nao pode estar em um momento futuro.
+2024-06-09T15:18:57.433-03:00  INFO 37624 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-09T15:18:57.435-03:00  INFO 37624 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 0.1914 milisegundos
+2024-06-09T15:18:57.435-03:00  INFO 37624 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-09T15:18:57.447-03:00  INFO 37624 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@eaf9a5d
+2024-06-09T15:18:57.448-03:00 ERROR 37624 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo.
+2024-06-09T15:18:57.455-03:00  INFO 37624 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-09T15:18:57.455-03:00  INFO 37624 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 0.178 milisegundos
+2024-06-09T15:18:57.455-03:00  INFO 37624 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-09T15:18:57.460-03:00  INFO 37624 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Removendo todas as transacoes.
+2024-06-09T15:18:57.461-03:00 ERROR 37624 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Houve algum problema ao tentar apagar os itens da lista.
+2024-06-09T15:18:57.466-03:00  INFO 37624 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@551e3881
+2024-06-09T15:18:57.466-03:00 ERROR 37624 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : payload errado.
+2024-06-09T15:18:57.473-03:00  INFO 37624 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
