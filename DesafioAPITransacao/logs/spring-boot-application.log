@@ -526,3 +526,57 @@ Caused by: java.lang.ClassNotFoundException: io.swagger.v3.oas.models.OpenAPI
 2024-06-09T14:28:31.536-03:00  INFO 37988 --- [desafioAPITransacao] [http-nio-8080-exec-8] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
 2024-06-09T14:28:31.538-03:00  INFO 37988 --- [desafioAPITransacao] [http-nio-8080-exec-8] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 0.8141 milisegundos
 2024-06-09T14:28:31.538-03:00  INFO 37988 --- [desafioAPITransacao] [http-nio-8080-exec-8] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-09T14:49:00.012-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Starting TransacaoControllerTest using Java 22.0.1 with PID 24544 (started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao)
+2024-06-09T14:49:00.013-03:00 DEBUG 24544 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-09T14:49:00.014-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2024-06-09T14:49:01.893-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-09T14:49:01.893-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-09T14:49:01.895-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-06-09T14:49:01.926-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.c.TransacaoControllerTest          : Started TransacaoControllerTest in 2.313 seconds (process running for 3.117)
+2024-06-09T14:49:02.115-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-09T14:49:02.119-03:00 ERROR 24544 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A lista esta vazia
+2024-06-09T14:49:02.297-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@6e948f1c
+2024-06-09T14:49:02.312-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Removendo todas as transacoes.
+2024-06-09T14:49:02.321-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-09T14:49:02.323-03:00 ERROR 24544 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Nao ha registro de transacoes para o intervalo de tempo escolhido
+2024-06-09T14:49:02.331-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-09T14:49:02.332-03:00 ERROR 24544 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A lista de transacoes esta vazia
+2024-06-09T14:49:02.338-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-09T14:49:02.339-03:00 ERROR 24544 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Nao ha registro de transacoes para o intervalo de tempo escolhido
+2024-06-09T14:49:02.346-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@20c3b34b
+2024-06-09T14:49:02.347-03:00 ERROR 24544 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo e a data da transacao nao pode estar em um momento futuro.
+2024-06-09T14:49:02.353-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@46e388ec
+2024-06-09T14:49:02.354-03:00 ERROR 24544 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : A data da transacao nao pode estar em um momento futuro.
+2024-06-09T14:49:02.360-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-09T14:49:02.361-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 0.7683 milisegundos
+2024-06-09T14:49:02.361-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-09T14:49:02.370-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@1846ad0f
+2024-06-09T14:49:02.371-03:00 ERROR 24544 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : O valor da transacao nao pode ser negativo.
+2024-06-09T14:49:02.377-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-09T14:49:02.377-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Tempo gasto para calcular estatisticas: 0.1747 milisegundos
+2024-06-09T14:49:02.377-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Exibindo estatisticas de transacao.
+2024-06-09T14:49:02.382-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Removendo todas as transacoes.
+2024-06-09T14:49:02.382-03:00 ERROR 24544 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Houve algum problema ao tentar apagar os itens da lista.
+2024-06-09T14:49:02.388-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Recebendo uma transação, org.example.desafioapitransacao.DTO.Transacao@31ab4859
+2024-06-09T14:49:02.389-03:00 ERROR 24544 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : payload errado.
+2024-06-09T14:49:02.395-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.controller.TransacaoController     : Listando todas as transaçoes
+2024-06-09T14:49:02.404-03:00  INFO 24544 --- [desafioAPITransacao] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.example.desafioapitransacao.DesafioApiTransacaoApplicationTests]: DesafioApiTransacaoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-06-09T14:49:02.412-03:00  INFO 24544 --- [desafioAPITransacao] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.example.desafioapitransacao.DesafioApiTransacaoApplication for test class org.example.desafioapitransacao.DesafioApiTransacaoApplicationTests
+2024-06-09T14:49:02.459-03:00  INFO 24544 --- [desafioAPITransacao] [main] .e.d.DesafioApiTransacaoApplicationTests : Starting DesafioApiTransacaoApplicationTests using Java 22.0.1 with PID 24544 (started by gustavo in C:\Users\gustavo\Desktop\desafio-tecnico\DesafioAPITransacao)
+2024-06-09T14:49:02.459-03:00 DEBUG 24544 --- [desafioAPITransacao] [main] .e.d.DesafioApiTransacaoApplicationTests : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-09T14:49:02.459-03:00  INFO 24544 --- [desafioAPITransacao] [main] .e.d.DesafioApiTransacaoApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-06-09T14:49:03.369-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2024-06-09T14:49:03.413-03:00  INFO 24544 --- [desafioAPITransacao] [main] .e.d.DesafioApiTransacaoApplicationTests : Started DesafioApiTransacaoApplicationTests in 0.992 seconds (process running for 4.604)
+2024-06-09T14:49:03.584-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.service.TransacaoService           : Recebendo dados de transacao mediante valicao de data sendo sempre em momento passado e valor igual ou maior doque zero.
+2024-06-09T14:49:03.601-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.service.TransacaoService           : A data da transacao nao pode estar em um momento futuro.
+2024-06-09T14:49:03.604-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.service.TransacaoService           : Excluindo registro de transacao
+2024-06-09T14:49:03.605-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.service.TransacaoService           : Estado da lista antes da exclusão: 2
+2024-06-09T14:49:03.605-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.service.TransacaoService           : Estado da lista antes da exclusão: 2
+2024-06-09T14:49:03.605-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.service.TransacaoService           : Houve algum problema ao tentar apagar os itens da lista.
+2024-06-09T14:49:03.607-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.service.TransacaoService           : O valor da transacao nao pode ser negativo.
+2024-06-09T14:49:03.609-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.service.TransacaoService           : Excluindo registro de transacao
+2024-06-09T14:49:03.609-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.service.TransacaoService           : Estado da lista antes da exclusão: 2
+2024-06-09T14:49:03.610-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.service.TransacaoService           : Estado da lista antes da exclusão: 0
+2024-06-09T14:49:03.614-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.service.TransacaoService           : Nao foi possivel retornar transacoes, a lista esta vazia.
+2024-06-09T14:49:03.617-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.service.TransacaoService           : Retornando lista de transacoes
+2024-06-09T14:49:03.619-03:00  INFO 24544 --- [desafioAPITransacao] [main] o.e.d.service.TransacaoService           : O valor da transacao nao pode ser negativo e a data da transacao nao pode estar em um momento futuro.
