@@ -8,15 +8,17 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.time.OffsetDateTime;
-import java.util.ArrayList;
+
 import java.util.DoubleSummaryStatistics;
-import java.util.IllegalFormatFlagsException;
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
 public class TransacaoService {
-    private TransacaoRepository transacaoRepository = new TransacaoRepository();
+    private TransacaoRepository transacaoRepository;
+    public TransacaoService(){
+        this.transacaoRepository = new TransacaoRepository();
+    }
     private static final Logger logger = LoggerFactory.getLogger(TransacaoService.class);
     public void receberTransacao(Transacao novaTransacao) {
         if(novaTransacao.getValor() < 0 && novaTransacao.getDataHora().isAfter(OffsetDateTime.now())){

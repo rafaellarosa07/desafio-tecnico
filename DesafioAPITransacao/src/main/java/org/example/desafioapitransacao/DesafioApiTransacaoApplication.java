@@ -9,5 +9,4 @@ public class DesafioApiTransacaoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DesafioApiTransacaoApplication.class, args);
 	}
-
 }
